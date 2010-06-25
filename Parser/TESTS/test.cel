@@ -1,0 +1,25 @@
+
+Declare
+
+ RESOLUTION 
+x = 5.0;
+
+InViewVolume(obj) = if (Count(CR(obj) != 0) 
+			Count(CoveredBy( CR(obj), CR(CVV))) / Count(CR(obj));
+		    else 
+		    	-1;
+		    	
+Occluded(obj) =  if (Count(R(obj) != 0) 
+			Count(CoveredBy( R(obj), R(!obj)) / Count(R(obj));
+		    else 
+		    	-1;
+		    	
+Area(obj) =  Count(R(obj));
+
+LeftOf(obj1,obj2) = 
+
+Evaluate
+
+[1-5,0.5] InViewVolume(["AstroBoy", "dd"] ) + Occluded("gundam") + Equal(Area("gundam"), 0.5 );
+
+ADD TIME/CONSIDER VARIATION?/ TEMPORAL REASONING/DISTINGUISH AVERAGE EVALUATION (over time/over value)

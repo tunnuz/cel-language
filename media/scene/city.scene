@@ -1,0 +1,3666 @@
+<scene formatVersion="1.0" upAxis="y" unitsPerMeter="1" minOgreVersion="1.4" author="OgreMax Scene Exporter by Derek Nedelman (www.ogremax.com)">
+    <environment>
+        <clipping near="0" far="500" />
+        <colourAmbient r="0.8" g="0.8" b="0.8" />
+        <colourBackground r="1" g="1" b="1" />
+    </environment>
+    <nodes>
+        <node name="Carpark">
+            <scale x="1" y="1" z="1" />
+            <position x="4.43226" y="1.94469" z="-62.0818" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Carpark" id="300" meshFile="Carpark.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1743" />
+                    <subentity index="1" materialName="Material#1745" />
+                    <subentity index="2" materialName="Material#1746" />
+                    <subentity index="3" materialName="Material#1747" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="fencepost">
+            <scale x="1" y="1" z="1" />
+            <position x="53.1488" y="0" z="18.6166" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="fencepost" id="302" meshFile="fencepost01.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="fence01">
+            <scale x="1" y="1" z="1" />
+            <position x="55.1002" y="0" z="29.3972" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="fence01" id="303" meshFile="fence01.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="fence02">
+            <scale x="1" y="1" z="1" />
+            <position x="55.1002" y="0" z="26.4254" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="fence02" id="304" meshFile="fence02.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="fence03">
+            <scale x="1" y="1" z="1" />
+            <position x="55.1002" y="0" z="20.6289" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="fence03" id="305" meshFile="fence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="fence04">
+            <scale x="1" y="1" z="1" />
+            <position x="55.1002" y="0" z="23.6007" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="fence04" id="306" meshFile="fence04.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="fence05">
+            <scale x="1" y="1" z="1" />
+            <position x="114.885" y="0" z="42.8321" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="fence05" id="307" meshFile="fence05.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="fence06">
+            <scale x="1" y="1" z="1" />
+            <position x="114.885" y="0" z="45.8039" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="fence06" id="308" meshFile="fence06.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence">
+            <scale x="1" y="1" z="1" />
+            <position x="118.329" y="0" z="38.9627" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="junkyardfence" id="309" meshFile="junkyardfence.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence01">
+            <scale x="1" y="1" z="1" />
+            <position x="118.329" y="0" z="35.9552" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="junkyardfence01" id="310" meshFile="junkyardfence01.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence02">
+            <scale x="1" y="1" z="1" />
+            <position x="118.329" y="0" z="32.9822" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="junkyardfence02" id="311" meshFile="junkyardfence02.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence03">
+            <scale x="1" y="1" z="1" />
+            <position x="118.329" y="0" z="30.0088" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="junkyardfence03" id="312" meshFile="junkyardfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence04">
+            <scale x="1" y="1" z="1" />
+            <position x="118.329" y="0" z="27.0039" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="junkyardfence04" id="313" meshFile="junkyardfence04.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Groundplane">
+            <scale x="1" y="1" z="1" />
+            <position x="125.799" y="4.74441" z="12.0159" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Groundplane" id="336" meshFile="Groundplane.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1710" />
+                    <subentity index="1" materialName="Material#1711" />
+                    <subentity index="2" materialName="Material#1712" />
+                    <subentity index="3" materialName="Material#1713" />
+                    <subentity index="4" materialName="Material#1714" />
+                    <subentity index="5" materialName="Material#1715" />
+                    <subentity index="6" materialName="Material#1716" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="TunnelEntrance2">
+            <scale x="1" y="1" z="1" />
+            <position x="50.0547" y="0" z="43.6302" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="TunnelEntrance2" id="391" meshFile="TunnelEntrance2.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="pavement" />
+                    <subentity index="1" materialName="Material#11" />
+                    <subentity index="2" materialName="Material#12" />
+                    <subentity index="3" materialName="Material#13" />
+                    <subentity index="4" materialName="NoMaterial" />
+                    <subentity index="5" materialName="Material#15" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Tunnelentrance1">
+            <scale x="1" y="1" z="1" />
+            <position x="34.2384" y="0" z="0.595673" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Tunnelentrance1" id="398" meshFile="Tunnelentrance1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="pavement" />
+                    <subentity index="1" materialName="Material#11" />
+                    <subentity index="2" materialName="Material#12" />
+                    <subentity index="3" materialName="Material#13" />
+                    <subentity index="4" materialName="NoMaterial" />
+                    <subentity index="5" materialName="Material#15" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence05">
+            <scale x="1" y="1" z="1" />
+            <position x="118.329" y="0" z="18.0463" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="junkyardfence05" id="458" meshFile="junkyardfence05.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence06">
+            <scale x="1" y="1" z="1" />
+            <position x="118.329" y="0" z="21.0511" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="junkyardfence06" id="459" meshFile="junkyardfence06.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence07">
+            <scale x="1" y="1" z="1" />
+            <position x="118.329" y="0" z="24.0246" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="junkyardfence07" id="460" meshFile="junkyardfence07.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence08">
+            <scale x="1" y="1" z="1" />
+            <position x="116.357" y="0" z="39.961" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="junkyardfence08" id="461" meshFile="junkyardfence08.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence09">
+            <scale x="1" y="1" z="1" />
+            <position x="113.533" y="0" z="39.961" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="junkyardfence09" id="463" meshFile="junkyardfence09.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence10">
+            <scale x="1" y="1" z="1" />
+            <position x="107.725" y="0" z="39.961" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="junkyardfence10" id="464" meshFile="junkyardfence10.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="junkyardfence11">
+            <scale x="1" y="1" z="1" />
+            <position x="110.549" y="0" z="39.961" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="junkyardfence11" id="465" meshFile="junkyardfence11.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="fencepost01">
+            <scale x="1" y="1" z="1" />
+            <position x="-12.5188" y="0.195361" z="22.9271" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="fencepost01" id="703" meshFile="fencepost01.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="09-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Buildings">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="Buildings" id="746" meshFile="Buildings.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="skydome">
+            <scale x="1" y="0.383603" z="1" />
+            <position x="-2.59632" y="-22.4281" z="28.8325" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="skydome" id="798" meshFile="skydome.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="17-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="freeway2">
+            <scale x="1" y="1" z="1" />
+            <position x="-135.992" y="4.6357" z="34.6899" />
+            <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+            <entity name="freeway2" id="292" meshFile="freeway2.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1732" />
+                    <subentity index="1" materialName="Material#1733" />
+                    <subentity index="2" materialName="Material#1734" />
+                    <subentity index="3" materialName="Material#1735" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tunnel">
+            <scale x="1" y="1" z="1" />
+            <position x="-128.378" y="4.21357" z="43.6932" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tunnel" id="809" meshFile="tunnel.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1788" />
+                    <subentity index="1" materialName="Material#1733" />
+                    <subentity index="2" materialName="Material#1734" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Box152">
+            <scale x="1" y="1" z="1" />
+            <position x="-27.7684" y="2.86307" z="-61.6086" />
+            <rotation qx="0" qy="0.11851" qz="0" qw="0.992953" />
+            <entity name="Box152" id="1032" meshFile="Box152.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1527" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Box153">
+            <scale x="1" y="1" z="1" />
+            <position x="-21.5413" y="2.86307" z="-67.6911" />
+            <rotation qx="0" qy="0.200471" qz="0" qw="0.9797" />
+            <entity name="Box153" id="1033" meshFile="Box153.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1527" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Box154">
+            <scale x="1" y="1" z="1" />
+            <position x="-12.7197" y="2.86307" z="-66.8624" />
+            <rotation qx="0" qy="-0.824673" qz="0" qw="0.56561" />
+            <entity name="Box154" id="1034" meshFile="Box154.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1527" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Box155">
+            <scale x="1" y="1" z="1" />
+            <position x="-1.52584" y="2.86307" z="-63.9999" />
+            <rotation qx="0" qy="-0.0637647" qz="0" qw="0.997965" />
+            <entity name="Box155" id="1035" meshFile="Box155.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1527" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Box156">
+            <scale x="1" y="1" z="1" />
+            <position x="-14.4475" y="2.86307" z="-60.7923" />
+            <rotation qx="0" qy="0.919045" qz="0" qw="0.394152" />
+            <entity name="Box156" id="1036" meshFile="Box156.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1527" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Box157">
+            <scale x="1" y="1" z="1" />
+            <position x="9.56363" y="2.86307" z="-68.3584" />
+            <rotation qx="0" qy="-0.172099" qz="0" qw="0.98508" />
+            <entity name="Box157" id="1037" meshFile="Box157.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1527" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Box158">
+            <scale x="1" y="1" z="1" />
+            <position x="25.9151" y="2.86307" z="-58.6426" />
+            <rotation qx="0" qy="0.970722" qz="0" qw="-0.240207" />
+            <entity name="Box158" id="1038" meshFile="Box158.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1527" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="transporter1">
+            <scale x="50.092" y="44.6748" z="44.6748" />
+            <position x="-1.96408" y="0.466486" z="-40.4511" />
+            <rotation qx="0" qy="0.726674" qz="0" qw="0.686982" />
+            <entity name="transporter1" id="1041" meshFile="transporter1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1753" />
+                    <subentity index="1" materialName="Material#1754" />
+                    <subentity index="2" materialName="wheel" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Roadsign">
+            <scale x="1" y="1" z="1" />
+            <position x="-13.3338" y="0" z="-35.0487" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Roadsign" id="1064" meshFile="Roadsign.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="sign" />
+                    <subentity index="1" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin">
+            <scale x="1" y="1" z="1" />
+            <position x="-18.3947" y="0.255072" z="-28.0776" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin" id="1067" meshFile="Dustbin.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="manhole">
+            <scale x="1" y="1" z="1" />
+            <position x="-5.98111" y="0" z="-27.1266" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="manhole" id="1068" meshFile="manhole.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="manole" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="manhole01">
+            <scale x="1" y="1" z="1" />
+            <position x="-5.98111" y="0" z="-3.40273" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="manhole01" id="1069" meshFile="manhole01.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="manole" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="manhole02">
+            <scale x="1" y="1" z="1" />
+            <position x="-33.7499" y="0" z="-3.40273" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="manhole02" id="1070" meshFile="manhole02.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="manole" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="manhole03">
+            <scale x="1" y="1" z="1" />
+            <position x="-33.7499" y="0" z="-25.8525" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="manhole03" id="1071" meshFile="manhole03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="manole" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="manhole04">
+            <scale x="1" y="1" z="1" />
+            <position x="-53.0409" y="0" z="-25.8525" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="manhole04" id="1072" meshFile="manhole04.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="manole" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="manhole05">
+            <scale x="1" y="1" z="1" />
+            <position x="-53.0409" y="0" z="-3.0246" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="manhole05" id="1073" meshFile="manhole05.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="manole" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="manhole06">
+            <scale x="1" y="1" z="1" />
+            <position x="-53.0409" y="0" z="24.9931" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="manhole06" id="1074" meshFile="manhole06.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="manole" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="manhole07">
+            <scale x="1" y="1" z="1" />
+            <position x="-32.9358" y="0" z="24.9931" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="manhole07" id="1075" meshFile="manhole07.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="manole" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp01">
+            <scale x="1" y="1" z="1" />
+            <position x="-26.5344" y="0" z="-33.5054" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Streetlamp01" id="1076" meshFile="Streetlamp01.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp02">
+            <scale x="1" y="1" z="1" />
+            <position x="-29.2216" y="0" z="-33.5054" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp02" id="1077" meshFile="Streetlamp02.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp04">
+            <scale x="1" y="1" z="1" />
+            <position x="-29.2216" y="0" z="-17.3106" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp04" id="1079" meshFile="Streetlamp04.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp05">
+            <scale x="1" y="1" z="1" />
+            <position x="-29.2263" y="0" z="-7.25419" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp05" id="1080" meshFile="Streetlamp05.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp06">
+            <scale x="1" y="1" z="1" />
+            <position x="-27.3405" y="0" z="-0.358404" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp06" id="1081" meshFile="Streetlamp06.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp07">
+            <scale x="1" y="1" z="1" />
+            <position x="-27.3405" y="0" z="18.1561" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp07" id="1082" meshFile="Streetlamp07.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp08">
+            <scale x="1" y="1" z="1" />
+            <position x="-47.4862" y="0" z="24.0831" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp08" id="1083" meshFile="Streetlamp08.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp09">
+            <scale x="1" y="1" z="1" />
+            <position x="-47.4862" y="0" z="7.88221" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp09" id="1084" meshFile="Streetlamp09.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp10">
+            <scale x="1" y="1" z="1" />
+            <position x="-47.4862" y="0" z="-6.47107" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp10" id="1085" meshFile="Streetlamp10.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp11">
+            <scale x="1" y="1" z="1" />
+            <position x="-47.4862" y="0" z="-18.5258" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp11" id="1086" meshFile="Streetlamp11.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp12">
+            <scale x="1" y="1" z="1" />
+            <position x="-47.4862" y="0" z="-41.2337" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp12" id="1087" meshFile="Streetlamp12.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp13">
+            <scale x="1" y="1" z="1" />
+            <position x="-0.0828171" y="0" z="-32.2092" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp13" id="1088" meshFile="Streetlamp13.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp14">
+            <scale x="1" y="1" z="1" />
+            <position x="-0.0828171" y="0" z="-17.4447" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp14" id="1089" meshFile="Streetlamp14.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp16">
+            <scale x="1" y="1" z="1" />
+            <position x="0.376947" y="0" z="18.9216" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp16" id="1091" meshFile="Streetlamp16.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp17">
+            <scale x="1" y="1" z="1" />
+            <position x="0.376947" y="0" z="31.0119" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp17" id="1092" meshFile="Streetlamp17.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp18">
+            <scale x="1" y="1" z="1" />
+            <position x="56.5941" y="0" z="28.7102" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp18" id="1093" meshFile="Streetlamp18.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp19">
+            <scale x="1" y="1" z="1" />
+            <position x="56.5941" y="0" z="0.168699" />
+            <rotation qx="0" qy="0.695045" qz="0" qw="0.718966" />
+            <entity name="Streetlamp19" id="1094" meshFile="Streetlamp19.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp20">
+            <scale x="1" y="1" z="1" />
+            <position x="-40.245" y="0" z="-28.8269" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="Streetlamp20" id="1099" meshFile="Streetlamp20.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp21">
+            <scale x="1" y="1" z="1" />
+            <position x="-59.9682" y="0" z="-28.8269" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="Streetlamp21" id="1100" meshFile="Streetlamp21.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp22">
+            <scale x="1" y="1" z="1" />
+            <position x="-59.9682" y="0" z="-3.32721" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="Streetlamp22" id="1101" meshFile="Streetlamp22.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp23">
+            <scale x="1" y="1" z="1" />
+            <position x="-59.9682" y="0" z="26.2224" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="Streetlamp23" id="1102" meshFile="Streetlamp23.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp24">
+            <scale x="1" y="1" z="1" />
+            <position x="-59.9682" y="0" z="59.2044" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="Streetlamp24" id="1103" meshFile="Streetlamp24.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp25">
+            <scale x="1" y="1" z="1" />
+            <position x="-11.434" y="0" z="-22.8516" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="Streetlamp25" id="1104" meshFile="Streetlamp25.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp26">
+            <scale x="1" y="1" z="1" />
+            <position x="-11.434" y="0" z="-1.72041" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="Streetlamp26" id="1105" meshFile="Streetlamp26.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp27">
+            <scale x="1" y="1" z="1" />
+            <position x="26.6675" y="0" z="5.95539" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="Streetlamp27" id="1106" meshFile="Streetlamp27.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp28">
+            <scale x="1" y="1" z="1" />
+            <position x="46.5452" y="0" z="-3.99436" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="Streetlamp28" id="1107" meshFile="Streetlamp28.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp29">
+            <scale x="1" y="1" z="1" />
+            <position x="41.6056" y="0" z="-30.7634" />
+            <rotation qx="0" qy="0.677514" qz="0" qw="0.735509" />
+            <entity name="Streetlamp29" id="1108" meshFile="Streetlamp29.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp30">
+            <scale x="1" y="1" z="1" />
+            <position x="31.3522" y="0" z="-42.4782" />
+            <rotation qx="0" qy="0.998782" qz="0" qw="-0.0493383" />
+            <entity name="Streetlamp30" id="1109" meshFile="Streetlamp30.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp31">
+            <scale x="1" y="1" z="1" />
+            <position x="8.4563" y="0" z="-42.4782" />
+            <rotation qx="0" qy="0.998782" qz="0" qw="-0.0493383" />
+            <entity name="Streetlamp31" id="1110" meshFile="Streetlamp31.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp32">
+            <scale x="1" y="1" z="1" />
+            <position x="-14.9887" y="0" z="-42.4782" />
+            <rotation qx="0" qy="0.998782" qz="0" qw="-0.0493383" />
+            <entity name="Streetlamp32" id="1111" meshFile="Streetlamp32.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp33">
+            <scale x="1" y="1" z="1" />
+            <position x="-19.5329" y="0" z="-16.3878" />
+            <rotation qx="0" qy="0.998782" qz="0" qw="-0.0493383" />
+            <entity name="Streetlamp33" id="1112" meshFile="Streetlamp33.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp34">
+            <scale x="1" y="1" z="1" />
+            <position x="-40.5077" y="0" z="-16.3878" />
+            <rotation qx="0" qy="0.998782" qz="0" qw="-0.0493383" />
+            <entity name="Streetlamp34" id="1113" meshFile="Streetlamp34.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp35">
+            <scale x="1" y="1" z="1" />
+            <position x="13.2561" y="0" z="-16.6426" />
+            <rotation qx="0" qy="0.998782" qz="0" qw="-0.0493383" />
+            <entity name="Streetlamp35" id="1114" meshFile="Streetlamp35.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp37">
+            <scale x="1" y="1" z="1" />
+            <position x="6.05452" y="0" z="-8.88441" />
+            <rotation qx="0" qy="-0.0354243" qz="0" qw="0.999372" />
+            <entity name="Streetlamp37" id="1116" meshFile="Streetlamp37.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Streetlamp38">
+            <scale x="1" y="1" z="1" />
+            <position x="-14.6032" y="0" z="-8.88441" />
+            <rotation qx="0" qy="-0.0354243" qz="0" qw="0.999372" />
+            <entity name="Streetlamp38" id="1117" meshFile="Streetlamp38.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Roadsign01">
+            <scale x="1" y="1" z="1" />
+            <position x="-27.2835" y="5.49522" z="48.0487" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Roadsign01" id="1118" meshFile="Roadsign01.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="sign" />
+                    <subentity index="1" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Roadsign02">
+            <scale x="1" y="1" z="1" />
+            <position x="6.82531" y="5.49522" z="48.0487" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Roadsign02" id="1119" meshFile="Roadsign02.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="sign" />
+                    <subentity index="1" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Roadsign03">
+            <scale x="1" y="1" z="1" />
+            <position x="-13.1257" y="5.49522" z="29.6133" />
+            <rotation qx="0" qy="1" qz="0" qw="-7.54979e-008" />
+            <entity name="Roadsign03" id="1120" meshFile="Roadsign03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="sign" />
+                    <subentity index="1" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Roadsign04">
+            <scale x="1" y="1" z="1" />
+            <position x="53.3949" y="5.49522" z="29.6133" />
+            <rotation qx="0" qy="1" qz="0" qw="-7.54979e-008" />
+            <entity name="Roadsign04" id="1121" meshFile="Roadsign04.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="sign" />
+                    <subentity index="1" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Roadsign05">
+            <scale x="1" y="1" z="1" />
+            <position x="25.6929" y="0" z="-35.0487" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Roadsign05" id="1122" meshFile="Roadsign05.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="sign" />
+                    <subentity index="1" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Roadsign06">
+            <scale x="1" y="1" z="1" />
+            <position x="17.6596" y="0" z="15.2813" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Roadsign06" id="1123" meshFile="Roadsign06.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="sign" />
+                    <subentity index="1" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Roadsign07">
+            <scale x="1" y="1" z="1" />
+            <position x="-26.1327" y="0" z="15.2813" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Roadsign07" id="1124" meshFile="Roadsign07.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="sign" />
+                    <subentity index="1" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Roadsign08">
+            <scale x="1" y="1" z="1" />
+            <position x="-0.880604" y="0" z="1.31568" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="Roadsign08" id="1125" meshFile="Roadsign08.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="sign" />
+                    <subentity index="1" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Roadsign09">
+            <scale x="1" y="1" z="1" />
+            <position x="-47.4231" y="0" z="1.31568" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="Roadsign09" id="1126" meshFile="Roadsign09.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="sign" />
+                    <subentity index="1" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin01">
+            <scale x="1" y="1" z="1" />
+            <position x="-16.8354" y="0.255072" z="-28.0776" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin01" id="1127" meshFile="Dustbin01.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin02">
+            <scale x="1" y="1" z="1" />
+            <position x="12.4245" y="0.255072" z="-26.9125" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin02" id="1128" meshFile="Dustbin02.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin03">
+            <scale x="1" y="1" z="1" />
+            <position x="11.4555" y="0.255072" z="-26.9125" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin03" id="1129" meshFile="Dustbin03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin04">
+            <scale x="1" y="1" z="1" />
+            <position x="12.4245" y="0.255072" z="-30.3373" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin04" id="1130" meshFile="Dustbin04.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin05">
+            <scale x="1" y="1" z="1" />
+            <position x="12.4245" y="0.482211" z="-29.9389" />
+            <rotation qx="0.660783" qy="0.194697" qz="-0.183451" qw="0.701288" />
+            <entity name="Dustbin05" id="1131" meshFile="Dustbin05.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin06">
+            <scale x="1" y="1" z="1" />
+            <position x="22.7859" y="0.255072" z="-29.6891" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin06" id="1134" meshFile="Dustbin06.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin07">
+            <scale x="1" y="1" z="1" />
+            <position x="21.7717" y="0.255072" z="-29.5182" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin07" id="1135" meshFile="Dustbin07.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin08">
+            <scale x="1" y="1" z="1" />
+            <position x="18.1618" y="0.255072" z="-27.4714" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin08" id="1136" meshFile="Dustbin08.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin09">
+            <scale x="1" y="1" z="1" />
+            <position x="14.1459" y="0.255072" z="-17.216" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin09" id="1137" meshFile="Dustbin09.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin10">
+            <scale x="1" y="1" z="1" />
+            <position x="14.955" y="0.255072" z="-16.6689" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin10" id="1138" meshFile="Dustbin10.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin11">
+            <scale x="1" y="1" z="1" />
+            <position x="14.1459" y="0.255072" z="16.936" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin11" id="1139" meshFile="Dustbin11.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin12">
+            <scale x="1" y="1" z="1" />
+            <position x="15.5234" y="0.255072" z="16.936" />
+            <rotation qx="-0.0433424" qy="0" qz="0" qw="0.99906" />
+            <entity name="Dustbin12" id="1140" meshFile="Dustbin12.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin13">
+            <scale x="1" y="1" z="1" />
+            <position x="9.96542" y="0.255072" z="7.72849" />
+            <rotation qx="-0.0433424" qy="0" qz="0" qw="0.99906" />
+            <entity name="Dustbin13" id="1141" meshFile="Dustbin13.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin14">
+            <scale x="1" y="1" z="1" />
+            <position x="8.58792" y="0.255072" z="7.72849" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin14" id="1142" meshFile="Dustbin14.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin15">
+            <scale x="1" y="1" z="1" />
+            <position x="9.96542" y="0.255072" z="-2.91528" />
+            <rotation qx="-0.0433424" qy="0" qz="0" qw="0.99906" />
+            <entity name="Dustbin15" id="1143" meshFile="Dustbin15.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin16">
+            <scale x="1" y="1" z="1" />
+            <position x="8.58792" y="0.255072" z="-2.91528" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin16" id="1144" meshFile="Dustbin16.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin17">
+            <scale x="1" y="1" z="1" />
+            <position x="8.7285" y="0.255072" z="31.8969" />
+            <rotation qx="-0.0433424" qy="0" qz="0" qw="0.99906" />
+            <entity name="Dustbin17" id="1145" meshFile="Dustbin17.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin18">
+            <scale x="1" y="1" z="1" />
+            <position x="7.351" y="0.255072" z="31.8969" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin18" id="1146" meshFile="Dustbin18.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin19">
+            <scale x="1" y="1" z="1" />
+            <position x="8.7285" y="0.14935" z="39.3067" />
+            <rotation qx="-0.0433424" qy="0" qz="0" qw="0.99906" />
+            <entity name="Dustbin19" id="1147" meshFile="Dustbin19.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin20">
+            <scale x="1" y="1" z="1" />
+            <position x="7.351" y="0.14935" z="39.3067" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin20" id="1148" meshFile="Dustbin20.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin21">
+            <scale x="1" y="1" z="1" />
+            <position x="-14.7959" y="0.14935" z="39.3067" />
+            <rotation qx="-0.0433424" qy="0" qz="0" qw="0.99906" />
+            <entity name="Dustbin21" id="1149" meshFile="Dustbin21.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin22">
+            <scale x="1" y="1" z="1" />
+            <position x="-16.1734" y="0.14935" z="39.3067" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin22" id="1150" meshFile="Dustbin22.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin23">
+            <scale x="1" y="1" z="1" />
+            <position x="-14.7959" y="0.14935" z="28.1442" />
+            <rotation qx="-0.0433424" qy="0" qz="0" qw="0.99906" />
+            <entity name="Dustbin23" id="1151" meshFile="Dustbin23.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin24">
+            <scale x="1" y="1" z="1" />
+            <position x="-16.1734" y="0.14935" z="28.1442" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin24" id="1152" meshFile="Dustbin24.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin25">
+            <scale x="1" y="1" z="1" />
+            <position x="23.8978" y="0.0250419" z="37.5332" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin25" id="1162" meshFile="Dustbin25.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Dustbin26">
+            <scale x="1" y="1" z="1" />
+            <position x="41.7872" y="0.0250419" z="37.5332" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="Dustbin26" id="1163" meshFile="Dustbin26.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="trash" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence03">
+            <scale x="1" y="1" z="1" />
+            <position x="107.937" y="0" z="-6.65931" />
+            <rotation qx="0" qy="0.544521" qz="0" qw="0.838747" />
+            <entity name="chainlinkfence03" id="466" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence04">
+            <scale x="1" y="1" z="1" />
+            <position x="103.093" y="0" z="-7.66266" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence04" id="663" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence05">
+            <scale x="1" y="1" z="1" />
+            <position x="98.0284" y="0" z="-7.66266" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence05" id="664" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence06">
+            <scale x="1" y="1" z="1" />
+            <position x="87.8996" y="0" z="-7.66266" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence06" id="665" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence07">
+            <scale x="1" y="1" z="1" />
+            <position x="92.9645" y="0" z="-7.66266" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence07" id="666" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence08">
+            <scale x="1" y="1" z="1" />
+            <position x="77.6642" y="0" z="-7.66266" />
+            <rotation qx="0.159681" qy="0.804607" qz="0.111334" qw="0.560994" />
+            <entity name="chainlinkfence08" id="667" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence09">
+            <scale x="1" y="1" z="1" />
+            <position x="66.9507" y="0" z="-5.07177" />
+            <rotation qx="0" qy="0.997039" qz="0" qw="-0.0768986" />
+            <entity name="chainlinkfence09" id="668" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence10">
+            <scale x="1" y="1" z="1" />
+            <position x="68.9539" y="0" z="-7.66266" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence10" id="669" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence11">
+            <scale x="1" y="1" z="1" />
+            <position x="82.8063" y="0" z="-7.66266" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence11" id="670" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence14">
+            <scale x="1" y="1" z="1" />
+            <position x="64.7105" y="0" z="-2.77667" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence14" id="673" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence15">
+            <scale x="1" y="1" z="1" />
+            <position x="59.6456" y="0" z="-2.77667" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence15" id="674" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence16">
+            <scale x="1" y="1" z="1" />
+            <position x="67.6125" y="0" z="24.1722" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence16" id="675" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence17">
+            <scale x="1" y="1" z="1" />
+            <position x="62.5646" y="0" z="24.1722" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence17" id="676" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence18">
+            <scale x="1" y="0.968152" z="1" />
+            <position x="33.667" y="2.97471" z="-54.0165" />
+            <rotation qx="0" qy="0.999732" qz="0" qw="-0.0231509" />
+            <entity name="chainlinkfence18" id="677" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence19">
+            <scale x="1" y="1" z="1" />
+            <position x="73.7052" y="0" z="-5.92291" />
+            <rotation qx="0.0121931" qy="0.610924" qz="-0.00320014" qw="0.791589" />
+            <entity name="chainlinkfence19" id="678" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence20">
+            <scale x="1" y="1" z="1" />
+            <position x="110.183" y="0" z="-3.02637" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="chainlinkfence20" id="679" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence21">
+            <scale x="1" y="1" z="1" />
+            <position x="110.183" y="0" z="2.04375" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="chainlinkfence21" id="680" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence22">
+            <scale x="1" y="1" z="1" />
+            <position x="110.183" y="0" z="7.18351" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="chainlinkfence22" id="681" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence23">
+            <scale x="1" y="1" z="1" />
+            <position x="110.183" y="0" z="12.2853" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="chainlinkfence23" id="682" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence24">
+            <scale x="1" y="1" z="1" />
+            <position x="105.1" y="0" z="13.6833" />
+            <rotation qx="0.311099" qy="-0.324518" qz="-0.618155" qw="0.644818" />
+            <entity name="chainlinkfence24" id="683" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence25">
+            <scale x="1" y="1" z="1" />
+            <position x="98.7284" y="0" z="13.6833" />
+            <rotation qx="0.17192" qy="-0.179335" qz="-0.670329" qw="0.699243" />
+            <entity name="chainlinkfence25" id="684" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence26">
+            <scale x="1" y="0.968152" z="1" />
+            <position x="35.6569" y="2.97471" z="-57.625" />
+            <rotation qx="0" qy="0.844394" qz="0" qw="0.535722" />
+            <entity name="chainlinkfence26" id="685" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence27">
+            <scale x="1" y="0.968152" z="1" />
+            <position x="33.667" y="3.00846" z="-70.7145" />
+            <rotation qx="0" qy="0.999732" qz="0" qw="-0.0231509" />
+            <entity name="chainlinkfence27" id="686" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence28">
+            <scale x="1" y="0.968152" z="1" />
+            <position x="33.667" y="2.93621" z="-61.6091" />
+            <rotation qx="0" qy="0.999732" qz="0" qw="-0.0231509" />
+            <entity name="chainlinkfence28" id="687" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence29">
+            <scale x="1" y="0.968152" z="1" />
+            <position x="22.7968" y="2.93621" z="-52.6389" />
+            <rotation qx="0" qy="0.999732" qz="0" qw="-0.0231509" />
+            <entity name="chainlinkfence29" id="688" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence30">
+            <scale x="1" y="0.968152" z="1" />
+            <position x="22.7968" y="3.00846" z="-57.5797" />
+            <rotation qx="0" qy="0.999732" qz="0" qw="-0.0231509" />
+            <entity name="chainlinkfence30" id="689" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence31">
+            <scale x="1" y="1" z="1" />
+            <position x="46.3699" y="0.250824" z="-4.14173" />
+            <rotation qx="0" qy="0.997039" qz="0" qw="-0.0768986" />
+            <entity name="chainlinkfence31" id="690" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence32">
+            <scale x="1" y="1" z="1" />
+            <position x="46.3699" y="0.250824" z="-9.12008" />
+            <rotation qx="0" qy="0.999995" qz="0" qw="-0.00316922" />
+            <entity name="chainlinkfence32" id="691" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence33">
+            <scale x="1" y="1" z="1" />
+            <position x="46.3699" y="0.250824" z="-14.2004" />
+            <rotation qx="0" qy="0.999995" qz="0" qw="-0.00316922" />
+            <entity name="chainlinkfence33" id="692" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence34">
+            <scale x="1" y="1" z="1" />
+            <position x="46.3699" y="0.250824" z="2.01845" />
+            <rotation qx="0" qy="0.999995" qz="0" qw="-0.00316922" />
+            <entity name="chainlinkfence34" id="693" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence35">
+            <scale x="1" y="1" z="1" />
+            <position x="46.3699" y="0.250824" z="11.4213" />
+            <rotation qx="0" qy="0.999995" qz="0" qw="-0.00316922" />
+            <entity name="chainlinkfence35" id="694" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence36">
+            <scale x="1" y="1" z="1" />
+            <position x="9.6715" y="5.1201" z="40.1251" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence36" id="715" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence37">
+            <scale x="1" y="1" z="1" />
+            <position x="14.767" y="5.1201" z="40.1251" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence37" id="716" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence38">
+            <scale x="1" y="1" z="1" />
+            <position x="24.9068" y="5.1201" z="40.1251" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence38" id="717" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence39">
+            <scale x="1" y="1" z="1" />
+            <position x="19.8112" y="5.1201" z="40.1251" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence39" id="718" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence40">
+            <scale x="1" y="1" z="1" />
+            <position x="35.0776" y="5.1201" z="40.1251" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence40" id="719" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence41">
+            <scale x="1" y="1" z="1" />
+            <position x="29.9821" y="5.1201" z="40.1251" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence41" id="720" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence42">
+            <scale x="1" y="1" z="1" />
+            <position x="45.2841" y="5.1201" z="40.1251" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence42" id="721" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence43">
+            <scale x="1" y="1" z="1" />
+            <position x="40.1886" y="5.1201" z="40.1251" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence43" id="722" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence44">
+            <scale x="1" y="1" z="1" />
+            <position x="55.5089" y="5.1201" z="40.1251" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence44" id="723" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence45">
+            <scale x="1" y="1" z="1" />
+            <position x="50.4134" y="5.1201" z="40.1251" />
+            <rotation qx="0" qy="0.707107" qz="0" qw="0.707107" />
+            <entity name="chainlinkfence45" id="724" meshFile="chainlinkfence03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="chainlinkfence46">
+            <scale x="1" y="1" z="1" />
+            <position x="37.6666" y="0" z="35.5225" />
+            <rotation qx="0" qy="0.984773" qz="0" qw="-0.173845" />
+            <entity name="chainlinkfence46" id="1164" meshFile="chainlinkfence46.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="21-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Roadsign10">
+            <scale x="1" y="1" z="1" />
+            <position x="45.5833" y="-1.56905" z="31.0903" />
+            <rotation qx="0" qy="-0.716271" qz="0" qw="0.697822" />
+            <entity name="Roadsign10" id="1166" meshFile="Roadsign10.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="sign" />
+                    <subentity index="1" materialName="post" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Box159">
+            <scale x="1" y="1" z="1" />
+            <position x="15.8907" y="2.86307" z="-64.7127" />
+            <rotation qx="0" qy="-0.172099" qz="0" qw="0.98508" />
+            <entity name="Box159" id="1167" meshFile="Box159.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1527" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="transporter03">
+            <scale x="50.092" y="44.6748" z="44.6748" />
+            <position x="15.6443" y="0.466486" z="-37.6369" />
+            <rotation qx="0" qy="0.792226" qz="0" qw="0.610228" />
+            <entity name="transporter03" id="1215" meshFile="transporter03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1753" />
+                    <subentity index="1" materialName="Material#1754" />
+                    <subentity index="2" materialName="wheel" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree1">
+            <scale x="0.969139" y="1.1935" z="0.969139" />
+            <position x="10.4871" y="2.36398" z="87.2254" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree1" id="115" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree02">
+            <scale x="0.742746" y="1" z="0.742746" />
+            <position x="16.0657" y="8.56844" z="88.0983" />
+            <rotation qx="0" qy="-0.178028" qz="0" qw="0.984025" />
+            <entity name="tree02" id="232" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree03">
+            <scale x="0.726961" y="1.09675" z="0.726961" />
+            <position x="4.13506" y="9.0054" z="86.1286" />
+            <rotation qx="0" qy="0.103482" qz="0" qw="0.994631" />
+            <entity name="tree03" id="233" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree04">
+            <scale x="0.797503" y="1.20317" z="0.797503" />
+            <position x="-2.69724" y="2.32416" z="87.2254" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree04" id="234" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree05">
+            <scale x="0.904698" y="1.26122" z="0.904698" />
+            <position x="-9.58942" y="8.49188" z="87.2254" />
+            <rotation qx="0" qy="-0.478265" qz="0" qw="0.878215" />
+            <entity name="tree05" id="235" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree06">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-25.6315" y="1.69111" z="90.4859" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree06" id="237" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree07">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-40.6997" y="1.69111" z="90.4859" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree07" id="238" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree08">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-35.1056" y="1.69111" z="90.4859" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree08" id="239" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree09">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-41.3542" y="1.69111" z="86.8844" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree09" id="240" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree10">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-35.1056" y="2.36774" z="106.984" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree10" id="241" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree11">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-25.6315" y="1.69111" z="109.899" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree11" id="242" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree12">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-35.1056" y="1.69111" z="109.899" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree12" id="243" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree13">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-40.6997" y="1.69111" z="109.899" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree13" id="244" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree14">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-41.3542" y="1.69111" z="106.297" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree14" id="245" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree57">
+            <scale x="0.742746" y="1" z="0.742746" />
+            <position x="-44.6659" y="2.83456" z="80.1655" />
+            <rotation qx="0" qy="-0.178028" qz="0" qw="0.984025" />
+            <entity name="tree57" id="804" meshFile="tree57.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree56">
+            <scale x="0.742746" y="1" z="0.742746" />
+            <position x="-16.8352" y="5.77524" z="80.1655" />
+            <rotation qx="0" qy="-0.178028" qz="0" qw="0.984025" />
+            <entity name="tree56" id="803" meshFile="tree56.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush">
+            <scale x="0.369494" y="0.592795" z="0.592795" />
+            <position x="-20.8929" y="8.5549" z="93.228" />
+            <rotation qx="-0.515048" qy="0.706463" qz="-0.437997" qw="-0.209272" />
+            <entity name="bush" id="648" meshFile="bush.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush01">
+            <scale x="0.441556" y="0.879914" z="0.720303" />
+            <position x="-9.00117" y="9.2307" z="93.228" />
+            <rotation qx="-0.00666919" qy="-0.594259" qz="0.677185" qw="-0.433858" />
+            <entity name="bush01" id="650" meshFile="bush01.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush02">
+            <scale x="0.441557" y="0.879914" z="0.720303" />
+            <position x="-9.00117" y="9.55817" z="101.57" />
+            <rotation qx="-0.302339" qy="0.726618" qz="-0.605983" qw="0.115769" />
+            <entity name="bush02" id="652" meshFile="bush02.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush03">
+            <scale x="0.441556" y="0.879914" z="0.720303" />
+            <position x="-31.9396" y="9.19504" z="102.182" />
+            <rotation qx="-0.338763" qy="0.73233" qz="-0.586398" qw="0.0712015" />
+            <entity name="bush03" id="653" meshFile="bush03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush04">
+            <scale x="0.369494" y="0.592795" z="0.592795" />
+            <position x="-34.0232" y="8.50748" z="93.228" />
+            <rotation qx="-0.515048" qy="0.706463" qz="-0.437997" qw="-0.209272" />
+            <entity name="bush04" id="654" meshFile="bush04.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush05">
+            <scale x="0.369494" y="0.592795" z="0.592795" />
+            <position x="-31.1519" y="8.50748" z="91.9529" />
+            <rotation qx="-0.572533" qy="0.669152" qz="-0.359613" qw="-0.308415" />
+            <entity name="bush05" id="655" meshFile="bush05.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush06">
+            <scale x="0.369494" y="0.592795" z="0.592795" />
+            <position x="-44.4381" y="8.50748" z="92.7837" />
+            <rotation qx="-0.458987" qy="0.726416" qz="-0.496434" qw="-0.123307" />
+            <entity name="bush06" id="656" meshFile="bush06.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush07">
+            <scale x="0.369494" y="0.592795" z="0.592795" />
+            <position x="-47.561" y="8.50748" z="92.4402" />
+            <rotation qx="-0.383055" qy="0.73659" qz="-0.557121" qw="-0.0178649" />
+            <entity name="bush07" id="657" meshFile="bush07.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush08">
+            <scale x="0.369494" y="0.592795" z="0.592795" />
+            <position x="-44.4381" y="9.24954" z="102.782" />
+            <rotation qx="-0.458987" qy="0.726416" qz="-0.496434" qw="-0.123307" />
+            <entity name="bush08" id="658" meshFile="bush08.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush09">
+            <scale x="0.278035" y="0.446062" z="0.446063" />
+            <position x="-47.561" y="8.71924" z="102.439" />
+            <rotation qx="-0.383055" qy="0.73659" qz="-0.557121" qw="-0.017865" />
+            <entity name="bush09" id="659" meshFile="bush09.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree55">
+            <scale x="0.742746" y="1" z="0.742746" />
+            <position x="1.36964" y="10.629" z="108.114" />
+            <rotation qx="0" qy="-0.178028" qz="0" qw="0.984025" />
+            <entity name="tree55" id="802" meshFile="tree55.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree52">
+            <scale x="0.742746" y="1" z="0.742746" />
+            <position x="28.4975" y="8.31645" z="88.0983" />
+            <rotation qx="0" qy="-0.178028" qz="0" qw="0.984025" />
+            <entity name="tree52" id="799" meshFile="tree52.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree53">
+            <scale x="0.742746" y="1" z="0.742746" />
+            <position x="28.4975" y="11.7827" z="101.438" />
+            <rotation qx="0" qy="-0.178028" qz="0" qw="0.984025" />
+            <entity name="tree53" id="800" meshFile="tree53.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree54">
+            <scale x="0.742746" y="1" z="0.742746" />
+            <position x="18.7491" y="7.65868" z="101.438" />
+            <rotation qx="0" qy="-0.178028" qz="0" qw="0.984025" />
+            <entity name="tree54" id="801" meshFile="tree54.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree15">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-50.3263" y="8.36551" z="109.253" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree15" id="246" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree58">
+            <scale x="0.742746" y="1" z="0.742746" />
+            <position x="-44.6659" y="0.0617933" z="61.5183" />
+            <rotation qx="0" qy="-0.178028" qz="0" qw="0.984025" />
+            <entity name="tree58" id="805" meshFile="tree58.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree59">
+            <scale x="0.742746" y="1" z="0.742746" />
+            <position x="-31.9541" y="1.85872" z="61.5183" />
+            <rotation qx="0" qy="-0.178028" qz="0" qw="0.984025" />
+            <entity name="tree59" id="806" meshFile="tree59.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree60">
+            <scale x="0.742746" y="1" z="0.742746" />
+            <position x="-40.3683" y="1.56674" z="54.6311" />
+            <rotation qx="0" qy="-0.178028" qz="0" qw="0.984025" />
+            <entity name="tree60" id="807" meshFile="tree60.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree16">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-59.8004" y="7.76109" z="109.253" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree16" id="247" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree17">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-65.3944" y="7.76109" z="109.253" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree17" id="248" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree19">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-77.4704" y="7.07037" z="90.7734" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree19" id="264" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree20">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-80.4756" y="7.91497" z="110.91" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree20" id="265" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree21">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-74.8815" y="7.91497" z="110.91" />
+            <rotation qx="0" qy="0.515377" qz="0" qw="0.856964" />
+            <entity name="tree21" id="266" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree22">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-81.1301" y="7.91497" z="107.308" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree22" id="267" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree23">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-62.2496" y="2.49705" z="88.5044" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree23" id="268" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree24">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-62.2496" y="1.82042" z="91.4189" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree24" id="269" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree25">
+            <scale x="0.835981" y="1.26122" z="0.83598" />
+            <position x="-67.8437" y="1.82042" z="91.4189" />
+            <rotation qx="-0.00812936" qy="-0.448293" qz="0.0804852" qw="0.890219" />
+            <entity name="tree25" id="270" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree26">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-68.4983" y="1.82042" z="87.8174" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree26" id="271" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree27">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-86.9444" y="7.60292" z="90.7734" />
+            <rotation qx="0" qy="0.2545" qz="0" qw="0.967073" />
+            <entity name="tree27" id="272" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree28">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-92.5385" y="7.60292" z="90.7734" />
+            <rotation qx="0" qy="0.449238" qz="0" qw="0.893412" />
+            <entity name="tree28" id="273" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree29">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-93.1931" y="7.60292" z="87.1719" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree29" id="274" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree30">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-101.726" y="7.58354" z="109.253" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree30" id="275" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree31">
+            <scale x="0.83598" y="1.26122" z="0.83598" />
+            <position x="-107.32" y="7.58354" z="109.253" />
+            <rotation qx="0" qy="-0.326981" qz="0" qw="0.945031" />
+            <entity name="tree31" id="276" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree32">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-92.2523" y="8.18796" z="109.253" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree32" id="277" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree33">
+            <scale x="0.83598" y="1.26122" z="0.83598" />
+            <position x="-82.6257" y="6.96094" z="109.899" />
+            <rotation qx="0" qy="-0.147873" qz="0" qw="0.989006" />
+            <entity name="tree33" id="278" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree34">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-116.808" y="7.54209" z="102.136" />
+            <rotation qx="0" qy="-0.782713" qz="0" qw="0.622382" />
+            <entity name="tree34" id="279" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree35">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-77.0316" y="7.63757" z="106.984" />
+            <rotation qx="0" qy="-0.452154" qz="0" qw="0.89194" />
+            <entity name="tree35" id="280" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree36">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-107.975" y="7.58354" z="105.652" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree36" id="281" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree37">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-122.402" y="7.54209" z="102.136" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree37" id="282" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree38">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-77.0316" y="6.96094" z="109.899" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree38" id="283" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree39">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-83.2802" y="6.96094" z="106.297" />
+            <rotation qx="0" qy="0.342144" qz="0" qw="0.939648" />
+            <entity name="tree39" id="284" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree40">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-123.056" y="7.54209" z="98.5346" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree40" id="285" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree41">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-99.2724" y="7.23522" z="88.4683" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree41" id="286" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree42">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-104.866" y="7.23522" z="88.4683" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree42" id="287" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree43">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-105.521" y="7.23522" z="84.8667" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree43" id="288" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree44">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-94.1736" y="7.23522" z="110.032" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree44" id="289" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree45">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-99.7677" y="7.23522" z="110.032" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree45" id="290" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree46">
+            <scale x="0.835981" y="1.26122" z="0.835981" />
+            <position x="-100.422" y="7.23522" z="106.43" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree46" id="291" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush10">
+            <scale x="0.252318" y="0.404804" z="0.404804" />
+            <position x="-59.0811" y="8.4853" z="103.597" />
+            <rotation qx="-0.458987" qy="0.726416" qz="-0.496434" qw="-0.123307" />
+            <entity name="bush10" id="660" meshFile="bush10.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bush11">
+            <scale x="0.252318" y="0.404804" z="0.404804" />
+            <position x="-61.2136" y="8.4853" z="103.362" />
+            <rotation qx="-0.383055" qy="0.73659" qz="-0.557122" qw="-0.0178648" />
+            <entity name="bush11" id="661" meshFile="bush11.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree49">
+            <scale x="0.433676" y="1.09675" z="0.433676" />
+            <position x="99.0512" y="0.946581" z="49.4193" />
+            <rotation qx="0" qy="0.103482" qz="0" qw="0.994631" />
+            <entity name="tree49" id="696" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree50">
+            <scale x="0.895762" y="1.35142" z="0.895762" />
+            <position x="114.753" y="1.54935" z="61.3656" />
+            <rotation qx="0" qy="0.103482" qz="0" qw="0.994631" />
+            <entity name="tree50" id="697" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree51">
+            <scale x="0.726961" y="1.09675" z="0.726961" />
+            <position x="121.578" y="0.0331993" z="54.8595" />
+            <rotation qx="0" qy="0.103482" qz="0" qw="0.994631" />
+            <entity name="tree51" id="698" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree48">
+            <scale x="0.726961" y="1.09675" z="0.726961" />
+            <position x="108.889" y="0.946581" z="49.4193" />
+            <rotation qx="0" qy="0.103482" qz="0" qw="0.994631" />
+            <entity name="tree48" id="695" meshFile="tree1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree18">
+            <scale x="0.501315" y="0.756323" z="0.501315" />
+            <position x="-14.6244" y="-3.38749" z="-19.4583" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree18" id="249" meshFile="tree18.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tree47">
+            <scale x="0.501315" y="0.756323" z="0.501315" />
+            <position x="-14.6244" y="-3.38749" z="-24.7231" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tree47" id="646" meshFile="tree47.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Trees" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="buildingsDistant">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="buildingsDistant" id="1217" meshFile="buildingsDistant.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="building1">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="building1" id="1218" meshFile="building1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="building2">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="building2" id="1219" meshFile="building2.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="building3">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="building3" id="1220" meshFile="building3.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="building4">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="building4" id="1221" meshFile="building4.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="building05">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="building05" id="1222" meshFile="building05.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="building6">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="building6" id="1223" meshFile="building6.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="building7">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="building7" id="1224" meshFile="building7.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="building8">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="building8" id="1225" meshFile="building8.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="buidling9">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="buidling9" id="1226" meshFile="buidling9.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="building10">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="building10" id="1227" meshFile="building10.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="building11">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="building11" id="1228" meshFile="building11.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="buildingnarrow1">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="buildingnarrow1" id="1229" meshFile="buildingnarrow1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="buildingnarrow2">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="buildingnarrow2" id="1230" meshFile="buildingnarrow2.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="buildingnarrow3">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="buildingnarrow3" id="1231" meshFile="buildingnarrow3.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                    <subentity index="4" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="buildingnarrow4">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="buildingnarrow4" id="1232" meshFile="buildingnarrow4.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="buildingtall1">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="buildingtall1" id="1233" meshFile="buildingtall1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="buildingtall2">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="buildingtall2" id="1234" meshFile="buildingtall2.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="buildingtall3">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="buildingtall3" id="1235" meshFile="buildingtall3.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="buildingtall4">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="buildingtall4" id="1236" meshFile="buildingtall4.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="building09">
+            <scale x="1" y="1" z="1" />
+            <position x="-89.6768" y="0.194673" z="22.4158" />
+            <rotation qx="0" qy="-0.707107" qz="0" qw="0.707107" />
+            <entity name="building09" id="1237" meshFile="building09.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="bricks" />
+                    <subentity index="1" materialName="env" />
+                    <subentity index="2" materialName="Material#1721" />
+                    <subentity index="3" materialName="Material#1721" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bridgesupports1">
+            <scale x="1" y="1" z="1" />
+            <position x="-135.992" y="4.6357" z="34.6899" />
+            <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+            <entity name="bridgesupports1" id="1238" meshFile="bridgesupports1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1732" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="bridgesupports2">
+            <scale x="1" y="1" z="1" />
+            <position x="-135.992" y="4.6357" z="34.6899" />
+            <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+            <entity name="bridgesupports2" id="1239" meshFile="bridgesupports2.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1732" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="freeway01">
+            <scale x="1" y="1" z="1" />
+            <position x="-135.992" y="4.6357" z="34.6899" />
+            <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+            <entity name="freeway01" id="1240" meshFile="freeway01.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1733" />
+                    <subentity index="1" materialName="Material#1734" />
+                    <subentity index="2" materialName="Material#1735" />
+                </subentities>
+            </entity>
+        </node>
+		  <!--
+        <node name="carpath1">
+            <scale x="1" y="1" z="1" />
+            <position x="-6.6936" y="0.208188" z="14.5889" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="carpath1" id="1734" meshFile="carpath1.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="NoMaterial" />
+                </subentities>
+            </entity>
+        </node>
+        -->
+        <node name="spitfire">
+            <scale x="0.00461581" y="0.00456903" z="0.00461581" />
+            <position x="-53.0675" y="0.208188" z="-20.4402" />
+            <rotation qx="0.000569229" qy="0.00717067" qz="0.00348642" qw="0.999968" />
+            <entity name="71spitfire" id="1703" meshFile="71spitfire.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1765" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="busbody01">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="-182.55" y="5.656" z="45.3351" />
+            <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+            <animations>
+                <animation name="busbody01" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="-182.55" y="5.656" z="45.3351" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="108.864" y="5.656" z="45.3351" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody01" id="3064" meshFile="busbody01.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft01">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121993" y="0.00174771" z="0.0456309" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft01" id="3068" meshFile="buswheelfrontleft01.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft01">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126777" y="0.00174771" z="0.0456305" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft01" id="3067" meshFile="buswheelrearleft01.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright01">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127947" y="0.00174771" z="-0.0544577" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright01" id="3066" meshFile="buswheelfrontright01.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright01">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127891" y="0.00174771" z="-0.0544581" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright01" id="3065" meshFile="buswheelrearright01.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <node name="busbody02">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="-116.958" y="5.656" z="41.9812" />
+            <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+            <animations>
+                <animation name="busbody02" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="-116.958" y="5.656" z="41.9812" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="174.456" y="5.656" z="41.9812" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody02" id="3069" meshFile="busbody02.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft02">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121993" y="0.00174771" z="0.0456312" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft02" id="3073" meshFile="buswheelfrontleft02.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft02">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126777" y="0.00174771" z="0.0456309" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft02" id="3072" meshFile="buswheelrearleft02.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright02">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127946" y="0.00174771" z="-0.0544574" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright02" id="3071" meshFile="buswheelfrontright02.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright02">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127891" y="0.00174771" z="-0.0544577" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright02" id="3070" meshFile="buswheelrearright02.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <node name="busbody03">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="-89.267" y="5.656" z="45.4839" />
+            <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+            <animations>
+                <animation name="busbody03" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="-89.267" y="5.656" z="45.4839" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="202.147" y="5.656" z="45.4839" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody03" id="3074" meshFile="busbody03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft03">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121994" y="0.00174771" z="0.0456308" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft03" id="3078" meshFile="buswheelfrontleft03.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft03">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126777" y="0.00174771" z="0.0456311" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft03" id="3077" meshFile="buswheelrearleft03.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright03">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127947" y="0.00174771" z="-0.0544575" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright03" id="3076" meshFile="buswheelfrontright03.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright03">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127891" y="0.00174771" z="-0.0544578" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright03" id="3075" meshFile="buswheelrearright03.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <node name="busbody04">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="-56.0594" y="5.656" z="41.951" />
+            <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+            <animations>
+                <animation name="busbody04" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="-56.0594" y="5.656" z="41.951" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="235.355" y="5.656" z="41.951" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody04" id="3079" meshFile="busbody04.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft04">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121993" y="0.00174771" z="0.0456311" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft04" id="3083" meshFile="buswheelfrontleft04.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft04">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126777" y="0.00174771" z="0.0456311" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft04" id="3082" meshFile="buswheelrearleft04.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright04">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127947" y="0.00174771" z="-0.0544577" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright04" id="3081" meshFile="buswheelfrontright04.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright04">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127892" y="0.00174771" z="-0.0544577" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright04" id="3080" meshFile="buswheelrearright04.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <node name="busbody05">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="-15.1615" y="5.656" z="42.119" />
+            <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+            <animations>
+                <animation name="busbody05" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="-15.1615" y="5.656" z="42.119" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="276.252" y="5.656" z="42.119" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody05" id="3084" meshFile="busbody05.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft05">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121992" y="0.00174771" z="0.045631" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft05" id="3088" meshFile="buswheelfrontleft05.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft05">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126778" y="0.00174771" z="0.045631" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft05" id="3087" meshFile="buswheelrearleft05.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright05">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127946" y="0.00174771" z="-0.0544577" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright05" id="3086" meshFile="buswheelfrontright05.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright05">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127892" y="0.00174771" z="-0.0544576" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright05" id="3085" meshFile="buswheelrearright05.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <node name="busbody06">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="-198.448" y="5.656" z="42.119" />
+            <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+            <animations>
+                <animation name="busbody06" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="-198.448" y="5.656" z="42.119" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="92.9663" y="5.656" z="42.119" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody06" id="3089" meshFile="busbody06.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft06">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121992" y="0.00174771" z="0.0456309" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft06" id="3093" meshFile="buswheelfrontleft06.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft06">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126778" y="0.00174771" z="0.0456309" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft06" id="3092" meshFile="buswheelrearleft06.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright06">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127946" y="0.00174771" z="-0.0544577" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright06" id="3091" meshFile="buswheelfrontright06.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright06">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127892" y="0.00174771" z="-0.0544581" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright06" id="3090" meshFile="buswheelrearright06.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <node name="busbody07">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="-240.925" y="5.656" z="45.4833" />
+            <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+            <animations>
+                <animation name="busbody07" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="-240.925" y="5.656" z="45.4833" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="50.4891" y="5.656" z="45.4833" />
+                        <rotation qx="0" qy="-0.709221" qz="0" qw="0.704986" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody07" id="3094" meshFile="busbody07.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft07">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121993" y="0.00174771" z="0.0456309" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft07" id="3098" meshFile="buswheelfrontleft07.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft07">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126777" y="0.00174771" z="0.0456309" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft07" id="3097" meshFile="buswheelrearleft07.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright07">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127947" y="0.00174771" z="-0.0544577" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright07" id="3096" meshFile="buswheelfrontright07.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright07">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127891" y="0.00174771" z="-0.0544581" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright07" id="3095" meshFile="buswheelrearright07.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <node name="busbody08">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="35.9002" y="5.656" z="33.9821" />
+            <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+            <animations>
+                <animation name="busbody08" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="35.9002" y="5.656" z="33.9821" />
+                        <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="-270.737" y="5.656" z="33.9821" />
+                        <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody08" id="3102" meshFile="busbody08.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft08">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121992" y="0.00174773" z="0.045631" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft08" id="3104" meshFile="buswheelfrontleft08.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright08">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127947" y="0.00174773" z="-0.0544577" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright08" id="3103" meshFile="buswheelfrontright08.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft08">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126778" y="0.00174773" z="0.045631" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft08" id="3101" meshFile="buswheelrearleft08.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright08">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127891" y="0.00174773" z="-0.0544577" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright08" id="3100" meshFile="buswheelrearright08.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <node name="busbody09">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="253.078" y="5.656" z="33.9821" />
+            <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+            <animations>
+                <animation name="busbody09" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="253.078" y="5.656" z="33.9821" />
+                        <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="-53.5597" y="5.656" z="33.9821" />
+                        <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody09" id="3107" meshFile="busbody09.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft09">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121993" y="0.00174773" z="0.0456309" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft09" id="3109" meshFile="buswheelfrontleft09.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright09">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127947" y="0.00174773" z="-0.0544577" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright09" id="3108" meshFile="buswheelfrontright09.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft09">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126777" y="0.00174773" z="0.0456305" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft09" id="3106" meshFile="buswheelrearleft09.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright09">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127891" y="0.00174773" z="-0.0544577" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright09" id="3105" meshFile="buswheelrearright09.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <node name="busbody10">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="322.827" y="5.656" z="33.9821" />
+            <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+            <animations>
+                <animation name="busbody10" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="322.827" y="5.656" z="33.9821" />
+                        <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="16.19" y="5.656" z="33.9821" />
+                        <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody10" id="3112" meshFile="busbody10.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft10">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121992" y="0.00174773" z="0.0456309" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft10" id="3114" meshFile="buswheelfrontleft10.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright10">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127947" y="0.00174773" z="-0.0544572" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright10" id="3113" meshFile="buswheelfrontright10.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft10">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126778" y="0.00174773" z="0.0456305" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft10" id="3111" meshFile="buswheelrearleft10.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright10">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127891" y="0.00174773" z="-0.0544577" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright10" id="3110" meshFile="buswheelrearright10.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <node name="busbody11">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="153.355" y="5.656" z="33.9821" />
+            <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+            <animations>
+                <animation name="busbody11" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="153.355" y="5.656" z="33.9821" />
+                        <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="-153.283" y="5.656" z="33.9821" />
+                        <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody11" id="3117" meshFile="busbody11.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft11">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121993" y="0.00174773" z="0.0456309" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft11" id="3119" meshFile="buswheelfrontleft11.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright11">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127947" y="0.00174773" z="-0.0544579" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright11" id="3118" meshFile="buswheelfrontright11.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft11">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126778" y="0.00174773" z="0.0456309" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft11" id="3116" meshFile="buswheelrearleft11.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright11">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127891" y="0.00174773" z="-0.0544577" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright11" id="3115" meshFile="buswheelrearright11.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <node name="busbody12">
+            <scale x="44.6748" y="44.6748" z="44.6748" />
+            <position x="89.7883" y="5.656" z="33.9821" />
+            <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+            <animations>
+                <animation name="busbody12" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="20.04">
+                        <translation x="89.7883" y="5.656" z="33.9821" />
+                        <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                    <keyframe time="48.6">
+                        <translation x="-216.849" y="5.656" z="33.9821" />
+                        <rotation qx="0" qy="0.706459" qz="0" qw="0.707754" />
+                        <scale x="44.6748" y="44.6748" z="44.6748" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="busbody12" id="3122" meshFile="busbody12.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="10-Default" />
+                    <subentity index="1" materialName="10-Default2" />
+                    <subentity index="2" materialName="02-Default" />
+                </subentities>
+            </entity>
+            <node name="buswheelfrontleft12">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0121993" y="0.00174773" z="0.0456309" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontleft12" id="3124" meshFile="buswheelfrontleft12.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelfrontright12">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="0.0127947" y="0.00174773" z="-0.0544577" />
+                <rotation qx="0.5" qy="0.5" qz="-0.5" qw="0.5" />
+                <entity name="buswheelfrontright12" id="3123" meshFile="buswheelfrontright12.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearleft12">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0126778" y="0.00174773" z="0.0456312" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearleft12" id="3121" meshFile="buswheelrearleft12.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+            <node name="buswheelrearright12">
+                <scale x="0.0442696" y="0.0442696" z="0.0442696" />
+                <position x="-0.0127891" y="0.00174773" z="-0.0544578" />
+                <rotation qx="0.5" qy="-0.5" qz="0.5" qw="0.5" />
+                <entity name="buswheelrearright12" id="3120" meshFile="buswheelrearright12.mesh" castShadows="true" receiveShadows="true">
+                    <subentities>
+                        <subentity index="0" materialName="20-Default" />
+                    </subentities>
+                </entity>
+            </node>
+        </node>
+        <!--
+			<node name="carpath2">
+            <scale x="1" y="1" z="1" />
+            <position x="-4.82125" y="0.208188" z="14.4253" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="carpath2" id="3606" meshFile="carpath2.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1776" />
+                </subentities>
+            </entity>
+        </node>
+-->
+        <node name="spitfiremo">
+            <scale x="0.00439809" y="0.00439809" z="0.00439809" />
+            <position x="-51.1951" y="0.208188" z="-20.6038" />
+            <rotation qx="0" qy="0.00540958" qz="0" qw="0.999985" />
+            <animations>
+                <animation name="spitfiremo" enable="true" loop="true" interpolationMode="spline" rotationInterpolationMode="spherical" length="119.96">
+                    <keyframe time="10.72">
+                        <translation x="-117.628" y="0.115884" z="43.8125" />
+                        <rotation qx="-0.00825486" qy="-0.720589" qz="-0.0089182" qw="0.693256" />
+                        <scale x="0.00439809" y="0.0043981" z="0.00439809" />
+                    </keyframe>
+                    <keyframe time="26.24">
+                        <translation x="-127.909" y="5.23962" z="41.7293" />
+                        <rotation qx="0.000458813" qy="0.699431" qz="-0.000432095" qw="0.7147" />
+                        <scale x="0.00439809" y="0.00439809" z="0.00439809" />
+                    </keyframe>
+                    <keyframe time="44.08">
+                        <translation x="102.922" y="2.99425" z="54.709" />
+                        <rotation qx="0.0489841" qy="0.722298" qz="-0.0494754" qw="0.688068" />
+                        <scale x="0.00439809" y="0.00439809" z="0.00439809" />
+                    </keyframe>
+                    <keyframe time="57.6">
+                        <translation x="52.2756" y="0.373592" z="27.4042" />
+                        <rotation qx="-0.00404846" qy="0.0202319" qz="3.81219e-006" qw="0.999787" />
+                        <scale x="0.00439809" y="0.00439809" z="0.00439809" />
+                    </keyframe>
+                    <keyframe time="71.84">
+                        <translation x="-90.3522" y="-6.8462" z="35.3839" />
+                        <rotation qx="0.0002818" qy="0.951" qz="-0.000813291" qw="0.309188" />
+                        <scale x="0.00439809" y="0.00439809" z="0.00439809" />
+                    </keyframe>
+                    <keyframe time="80.4">
+                        <translation x="-2.84861" y="-6.92448" z="10.1602" />
+                        <rotation qx="-0.000306985" qy="0.631134" qz="0.000240021" qw="0.775674" />
+                        <scale x="0.00439809" y="0.00439809" z="0.00439809" />
+                    </keyframe>
+                    <keyframe time="89.8">
+                        <translation x="-19.1718" y="0.208188" z="-15.0969" />
+                        <rotation qx="2.31322e-008" qy="-0.370258" qz="-5.49328e-008" qw="0.928929" />
+                        <scale x="0.00439809" y="0.00439809" z="0.00439809" />
+                    </keyframe>
+                    <keyframe time="92.12">
+                        <translation x="-15.3229" y="0.209401" z="13.1818" />
+                        <rotation qx="-6.87862e-005" qy="0.640016" qz="5.50091e-005" qw="0.768362" />
+                        <scale x="0.00439809" y="0.00439809" z="0.00439809" />
+                    </keyframe>
+                    <keyframe time="108.88">
+                        <translation x="26.8459" y="3.03736" z="-66.7622" />
+                        <rotation qx="1.1648e-008" qy="0.751362" qz="-1.01159e-007" qw="0.65989" />
+                        <scale x="0.00439809" y="0.00439809" z="0.00439809" />
+                    </keyframe>
+                    <keyframe time="118.48">
+                        <translation x="-38.984" y="0.2866" z="-39.9292" />
+                        <rotation qx="0.0041971" qy="-0.653518" qz="0.00376743" qw="0.75689" />
+                        <scale x="0.00439809" y="0.00439809" z="0.00439809" />
+                    </keyframe>
+                </animation>
+            </animations>
+            <entity name="spitfiremo" id="3161" meshFile="spitfiremo.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="06-Default" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="Camera11">
+            <scale x="1" y="1" z="1" />
+            <position x="43.5862" y="0.797967" z="-65.9482" />
+            <rotation qx="-0" qy="0.743682" qz="-0" qw="0.668534" />
+            <trackTarget nodeName="Camera11.Target">
+                <localDirection x="0" y="0" z="-1" />
+            </trackTarget>
+            <camera name="Camera11" id="3172" fov="1.11311">
+                <clipping near="0.01" far="1000" />
+            </camera>
+        </node>
+        <node name="Camera11.Target" id="3171">
+            <scale x="1" y="1" z="1" />
+            <position x="39.5301" y="0.797966" z="-65.5153" />
+            <rotation qx="5.21825e-014" qy="0.710447" qz="-5.2563e-014" qw="0.703751" />
+        </node>
+        <node name="tunnel2">
+            <scale x="1" y="1" z="1" />
+            <position x="-128.378" y="4.21357" z="33.736" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tunnel2" id="4029" meshFile="tunnel2.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1788" />
+                    <subentity index="1" materialName="Material#1733" />
+                    <subentity index="2" materialName="Material#1734" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tunnel03">
+            <scale x="1" y="1" z="1" />
+            <position x="-134.785" y="5.79856" z="1.86624" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tunnel03" id="4030" meshFile="tunnel03.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1788" />
+                    <subentity index="1" materialName="Material#1733" />
+                    <subentity index="2" materialName="Material#1734" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tunnel04">
+            <scale x="1" y="1" z="1" />
+            <position x="-128.378" y="5.79856" z="11.8233" />
+            <rotation qx="0" qy="0" qz="0" qw="1" />
+            <entity name="tunnel04" id="4031" meshFile="tunnel04.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1788" />
+                    <subentity index="1" materialName="Material#1733" />
+                    <subentity index="2" materialName="Material#1734" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tunnel05">
+            <scale x="1" y="1" z="1" />
+            <position x="136.712" y="4.75887" z="43.6988" />
+            <rotation qx="0" qy="0.999995" qz="0" qw="0.00325445" />
+            <entity name="tunnel05" id="4032" meshFile="tunnel05.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1788" />
+                    <subentity index="1" materialName="Material#1733" />
+                    <subentity index="2" materialName="Material#1734" />
+                </subentities>
+            </entity>
+        </node>
+        <node name="tunnel06">
+            <scale x="1" y="1" z="1" />
+            <position x="136.777" y="4.75887" z="33.7419" />
+            <rotation qx="0" qy="0.999995" qz="0" qw="0.00325445" />
+            <entity name="tunnel06" id="4033" meshFile="tunnel06.mesh" castShadows="true" receiveShadows="true">
+                <subentities>
+                    <subentity index="0" materialName="Material#1788" />
+                    <subentity index="1" materialName="Material#1733" />
+                    <subentity index="2" materialName="Material#1734" />
+                </subentities>
+            </entity>
+        </node>
+    </nodes>
+</scene>

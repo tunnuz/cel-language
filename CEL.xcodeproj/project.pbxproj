@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5008EF7B11907F9E00A2A087 /* target.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5008EF7811907F9E00A2A087 /* target.cpp */; };
+		5008EF7C11907F9E00A2A087 /* targetnegation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5008EF7911907F9E00A2A087 /* targetnegation.cpp */; };
+		5008EF7D11907F9E00A2A087 /* vectoroftargets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5008EF7A11907F9E00A2A087 /* vectoroftargets.cpp */; };
+		500A776711D275EF00806CA1 /* callfunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 500A776211D275EF00806CA1 /* callfunction.cpp */; };
+		500A776811D275EF00806CA1 /* quadframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 500A776311D275EF00806CA1 /* quadframe.cpp */; };
+		500A776911D275EF00806CA1 /* quadframe.h in Headers */ = {isa = PBXBuildFile; fileRef = 500A776411D275EF00806CA1 /* quadframe.h */; };
+		500A776A11D275EF00806CA1 /* viewvolume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 500A776511D275EF00806CA1 /* viewvolume.cpp */; };
+		500A776B11D275EF00806CA1 /* viewvolume.h in Headers */ = {isa = PBXBuildFile; fileRef = 500A776611D275EF00806CA1 /* viewvolume.h */; };
+		500D7B8511D14A960019F872 /* targetfunction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 500D7B8311D14A960019F872 /* targetfunction.cpp */; };
+		500D7B8611D14A960019F872 /* targetfunction.h in Headers */ = {isa = PBXBuildFile; fileRef = 500D7B8411D14A960019F872 /* targetfunction.h */; };
+		50345F9611C1253900362C7B /* Ogre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50345F9511C1253900362C7B /* Ogre.framework */; };
+		50345F9711C1253900362C7B /* Ogre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50345F9511C1253900362C7B /* Ogre.framework */; };
+		5034609311C1260700362C7B /* libois.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50345F9A11C1255D00362C7B /* libois.a */; };
+		5034609411C1260700362C7B /* libois.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50345F9A11C1255D00362C7B /* libois.a */; };
+		5054D57B11C9033900CE18D3 /* OgreConsole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5054D57911C9033900CE18D3 /* OgreConsole.cpp */; };
+		50ABD86111CB9D870094C39D /* rendererpsexpression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD83A11CB9C470094C39D /* rendererpsexpression.cpp */; };
+		50ABD88811CB9EBB0094C39D /* cel_lex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD83011CB9C470094C39D /* cel_lex.cpp */; };
+		50ABD88911CB9EBB0094C39D /* cel_yacc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50ABD83111CB9C470094C39D /* cel_yacc.cpp */; };
+		50BA740911B80E8D002CE77D /* CEL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BA731111B80E8D002CE77D /* CEL.dylib */; };
+		50E477C41190148D00C85EFE /* PixelSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50E477BC1190148D00C85EFE /* PixelSet.cpp */; };
+		50E477C51190148D00C85EFE /* PixelSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E477BD1190148D00C85EFE /* PixelSet.h */; };
+		50E477C61190148D00C85EFE /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50E477BE1190148D00C85EFE /* Renderer.cpp */; };
+		50E477C71190148D00C85EFE /* Renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 50E477BF1190148D00C85EFE /* Renderer.h */; };
+		D001156011C0EA0C00D3CD40 /* OgreMaxModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D001155311C0EA0C00D3CD40 /* OgreMaxModel.cpp */; };
+		D001156111C0EA0C00D3CD40 /* OgreMaxScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D001155711C0EA0C00D3CD40 /* OgreMaxScene.cpp */; };
+		D001156211C0EA0C00D3CD40 /* OgreMaxUtilities.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D001155A11C0EA0C00D3CD40 /* OgreMaxUtilities.cpp */; };
+		D001156311C0EA0C00D3CD40 /* ProgressCalculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D001155C11C0EA0C00D3CD40 /* ProgressCalculator.cpp */; };
+		D001156411C0EA0C00D3CD40 /* Version.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D001155E11C0EA0C00D3CD40 /* Version.cpp */; };
+		D00115EF11C0F6CF00D3CD40 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00115ED11C0F6CF00D3CD40 /* tinyxml.cpp */; };
+		D001160211C0F7B500D3CD40 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D001160011C0F7B500D3CD40 /* tinyxmlerror.cpp */; };
+		D001160311C0F7B500D3CD40 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D001160111C0F7B500D3CD40 /* tinyxmlparser.cpp */; };
+		D00C0F09118EFE4E00D8B266 /* basetype.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00C0C1E118EF68700D8B266 /* basetype.cpp */; };
+		D00C0F0A118EFE4E00D8B266 /* basetype.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C1F118EF68700D8B266 /* basetype.h */; };
+		D00C0F0B118EFE4E00D8B266 /* buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00C0C20118EF68700D8B266 /* buffer.cpp */; };
+		D00C0F0C118EFE4E00D8B266 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C21118EF68700D8B266 /* buffer.h */; };
+		D00C0F0D118EFE4E00D8B266 /* callfunction.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C22118EF68700D8B266 /* callfunction.h */; };
+		D00C0F0E118EFE4E00D8B266 /* cel.ypp in Sources */ = {isa = PBXBuildFile; fileRef = D00C0C24118EF68700D8B266 /* cel.ypp */; };
+		D00C0F0F118EFE4E00D8B266 /* celparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00C0C25118EF68700D8B266 /* celparser.cpp */; };
+		D00C0F10118EFE4E00D8B266 /* celparser.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C26118EF68700D8B266 /* celparser.h */; };
+		D00C0F11118EFE4E00D8B266 /* comparisionoperator.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C27118EF68700D8B266 /* comparisionoperator.h */; };
+		D00C0F12118EFE4E00D8B266 /* conditionaloperator.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C28118EF68700D8B266 /* conditionaloperator.h */; };
+		D00C0F13118EFE4E00D8B266 /* count.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C29118EF68700D8B266 /* count.h */; };
+		D00C0F14118EFE4E00D8B266 /* coveredbypixelsetoperator.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C2A118EF68700D8B266 /* coveredbypixelsetoperator.h */; };
+		D00C0F15118EFE4E00D8B266 /* cuberendererpsexpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C2B118EF68700D8B266 /* cuberendererpsexpression.h */; };
+		D00C0F16118EFE4E00D8B266 /* expression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00C0C2D118EF68700D8B266 /* expression.cpp */; };
+		D00C0F17118EFE4E00D8B266 /* expression.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C2E118EF68700D8B266 /* expression.h */; };
+		D00C0F19118EFE4E00D8B266 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00C0C30118EF68700D8B266 /* main.cpp */; };
+		D00C0F1A118EFE4E00D8B266 /* mathoperator.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C31118EF68700D8B266 /* mathoperator.h */; };
+		D00C0F1B118EFE4E00D8B266 /* operator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00C0C32118EF68700D8B266 /* operator.cpp */; };
+		D00C0F1C118EFE4E00D8B266 /* operator.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C33118EF68700D8B266 /* operator.h */; };
+		D00C0F1D118EFE4E00D8B266 /* pixelsetexpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C34118EF68700D8B266 /* pixelsetexpression.h */; };
+		D00C0F1E118EFE4E00D8B266 /* pixelsetoperator.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C35118EF68700D8B266 /* pixelsetoperator.h */; };
+		D00C0F1F118EFE4E00D8B266 /* rendererpsexpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C36118EF68700D8B266 /* rendererpsexpression.h */; };
+		D00C0F20118EFE4E00D8B266 /* symbol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00C0C37118EF68700D8B266 /* symbol.cpp */; };
+		D00C0F21118EFE4E00D8B266 /* symbol.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C38118EF68700D8B266 /* symbol.h */; };
+		D00C0F22118EFE4E00D8B266 /* symboltable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00C0C39118EF68700D8B266 /* symboltable.cpp */; };
+		D00C0F23118EFE4E00D8B266 /* symboltable.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C3A118EF68700D8B266 /* symboltable.h */; };
+		D00C0F24118EFE4E00D8B266 /* target.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C3B118EF68700D8B266 /* target.h */; };
+		D00C0F25118EFE4E00D8B266 /* targetexpression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D00C0C3C118EF68700D8B266 /* targetexpression.cpp */; };
+		D00C0F26118EFE4E00D8B266 /* targetexpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C3D118EF68700D8B266 /* targetexpression.h */; };
+		D00C0F27118EFE4E00D8B266 /* targetexpressionvisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C3E118EF68700D8B266 /* targetexpressionvisitor.h */; };
+		D00C0F28118EFE4E00D8B266 /* targetnegation.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C3F118EF68700D8B266 /* targetnegation.h */; };
+		D00C0F29118EFE4E00D8B266 /* vectoroftargets.h in Headers */ = {isa = PBXBuildFile; fileRef = D00C0C40118EF68700D8B266 /* vectoroftargets.h */; };
+		D00C0F2A118EFE4E00D8B266 /* cel.lpp in Sources */ = {isa = PBXBuildFile; fileRef = D00C0C19118EF60C00D8B266 /* cel.lpp */; };
+		D036A8D7103BFC30008D6C0E /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D036A8D6103BFC30008D6C0E /* Test.cpp */; };
+		D036A9C9103C002D008D6C0E /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D036A87B103BF690008D6C0E /* IOKit.framework */; };
+		D0580C98118F09F90034414A /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D036A87B103BF690008D6C0E /* IOKit.framework */; };
+		D0580D8E118F0A210034414A /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D036A894103BF84C008D6C0E /* Carbon.framework */; };
+		D090B0CB11B7F58C00424311 /* plugins.cfg in CopyFiles */ = {isa = PBXBuildFile; fileRef = D036A8DA103BFD56008D6C0E /* plugins.cfg */; };
+		D090B0CC11B7F58C00424311 /* resources.cfg in CopyFiles */ = {isa = PBXBuildFile; fileRef = D036A8DB103BFD56008D6C0E /* resources.cfg */; };
+		D0F25FA011C680510066A2ED /* aboveofpixelsetexpression.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F25F9F11C680510066A2ED /* aboveofpixelsetexpression.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		D0580AFE118F06320034414A /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc.4_2;
+			fileType = sourcecode.cpp;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		D0580E09118F105D0034414A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D00C0ED9118EFE2500D8B266;
+			remoteInfo = Parser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D090B0C811B7F54C00424311 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				D090B0CB11B7F58C00424311 /* plugins.cfg in CopyFiles */,
+				D090B0CC11B7F58C00424311 /* resources.cfg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5008EF7811907F9E00A2A087 /* target.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = target.cpp; path = Parser/target.cpp; sourceTree = "<group>"; };
+		5008EF7911907F9E00A2A087 /* targetnegation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = targetnegation.cpp; path = Parser/targetnegation.cpp; sourceTree = "<group>"; };
+		5008EF7A11907F9E00A2A087 /* vectoroftargets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = vectoroftargets.cpp; path = Parser/vectoroftargets.cpp; sourceTree = "<group>"; };
+		500A776211D275EF00806CA1 /* callfunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = callfunction.cpp; path = Parser/callfunction.cpp; sourceTree = "<group>"; };
+		500A776311D275EF00806CA1 /* quadframe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = quadframe.cpp; path = Parser/quadframe.cpp; sourceTree = "<group>"; };
+		500A776411D275EF00806CA1 /* quadframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = quadframe.h; path = Parser/quadframe.h; sourceTree = "<group>"; };
+		500A776511D275EF00806CA1 /* viewvolume.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = viewvolume.cpp; path = Parser/viewvolume.cpp; sourceTree = "<group>"; };
+		500A776611D275EF00806CA1 /* viewvolume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = viewvolume.h; path = Parser/viewvolume.h; sourceTree = "<group>"; };
+		500D7B8311D14A960019F872 /* targetfunction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = targetfunction.cpp; path = Parser/targetfunction.cpp; sourceTree = "<group>"; };
+		500D7B8411D14A960019F872 /* targetfunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = targetfunction.h; path = Parser/targetfunction.h; sourceTree = "<group>"; };
+		50345F9511C1253900362C7B /* Ogre.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogre.framework; path = /Library/Frameworks/Ogre.framework; sourceTree = "<absolute>"; };
+		50345F9A11C1255D00362C7B /* libois.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = libois.a; path = /Applications/OgreSDK/Dependencies/lib/Release/libois.a; sourceTree = "<absolute>"; };
+		5054D57911C9033900CE18D3 /* OgreConsole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OgreConsole.cpp; sourceTree = "<group>"; };
+		5054D57A11C9033900CE18D3 /* OgreConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OgreConsole.h; sourceTree = "<group>"; };
+		5054D57E11C9035300CE18D3 /* Console.fontdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Console.fontdef; sourceTree = "<group>"; };
+		5054D57F11C9035300CE18D3 /* Console.material */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Console.material; sourceTree = "<group>"; };
+		5054D58011C9035300CE18D3 /* Console.overlay */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Console.overlay; sourceTree = "<group>"; };
+		507B904D11CF586800DEE857 /* Frustum.material */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Frustum.material; sourceTree = "<group>"; };
+		5098C6B411CBC8AC0035C4DD /* Frame.material */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Frame.material; sourceTree = "<group>"; };
+		50ABD82F11CB9C470094C39D /* belowofpixelsetexpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = belowofpixelsetexpression.h; path = Parser/belowofpixelsetexpression.h; sourceTree = "<group>"; };
+		50ABD83011CB9C470094C39D /* cel_lex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cel_lex.cpp; path = Parser/cel_lex.cpp; sourceTree = "<group>"; };
+		50ABD83111CB9C470094C39D /* cel_yacc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cel_yacc.cpp; path = Parser/cel_yacc.cpp; sourceTree = "<group>"; };
+		50ABD83211CB9C470094C39D /* cel_yacc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cel_yacc.h; path = Parser/cel_yacc.h; sourceTree = "<group>"; };
+		50ABD83311CB9C470094C39D /* celparserexception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = celparserexception.h; path = Parser/celparserexception.h; sourceTree = "<group>"; };
+		50ABD83411CB9C470094C39D /* constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = constant.h; path = Parser/constant.h; sourceTree = "<group>"; };
+		50ABD83511CB9C470094C39D /* coveredbypixelsetexpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coveredbypixelsetexpression.h; path = Parser/coveredbypixelsetexpression.h; sourceTree = "<group>"; };
+		50ABD83611CB9C470094C39D /* distancepixelsetoperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = distancepixelsetoperator.h; path = Parser/distancepixelsetoperator.h; sourceTree = "<group>"; };
+		50ABD83711CB9C470094C39D /* leftofpixelsetexpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = leftofpixelsetexpression.h; path = Parser/leftofpixelsetexpression.h; sourceTree = "<group>"; };
+		50ABD83811CB9C470094C39D /* minmaxpixelsetoperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = minmaxpixelsetoperator.h; path = Parser/minmaxpixelsetoperator.h; sourceTree = "<group>"; };
+		50ABD83911CB9C470094C39D /* overlappixelsetexpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = overlappixelsetexpression.h; path = Parser/overlappixelsetexpression.h; sourceTree = "<group>"; };
+		50ABD83A11CB9C470094C39D /* rendererpsexpression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rendererpsexpression.cpp; path = Parser/rendererpsexpression.cpp; sourceTree = "<group>"; };
+		50ABD83B11CB9C470094C39D /* rightofpixelsetexpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rightofpixelsetexpression.h; path = Parser/rightofpixelsetexpression.h; sourceTree = "<group>"; };
+		50ABD83C11CB9C470094C39D /* silhouettepixelsetexpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = silhouettepixelsetexpression.h; path = Parser/silhouettepixelsetexpression.h; sourceTree = "<group>"; };
+		50ABD83D11CB9C470094C39D /* tointoperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tointoperator.h; path = Parser/tointoperator.h; sourceTree = "<group>"; };
+		50ABD8DA11CBB0F50094C39D /* omniscript.cel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = omniscript.cel; sourceTree = "<group>"; };
+		50ABD8DB11CBB0F50094C39D /* test.cel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.cel; sourceTree = "<group>"; };
+		50ABD8DC11CBB0F50094C39D /* test1.cel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test1.cel; sourceTree = "<group>"; };
+		50ABD8DD11CBB0F50094C39D /* test2.cel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test2.cel; sourceTree = "<group>"; };
+		50BA731111B80E8D002CE77D /* CEL.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = CEL.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		50E477BC1190148D00C85EFE /* PixelSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PixelSet.cpp; path = Operators/PixelSet.cpp; sourceTree = SOURCE_ROOT; };
+		50E477BD1190148D00C85EFE /* PixelSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PixelSet.h; path = Operators/PixelSet.h; sourceTree = SOURCE_ROOT; };
+		50E477BE1190148D00C85EFE /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Renderer.cpp; path = Operators/Renderer.cpp; sourceTree = SOURCE_ROOT; };
+		50E477BF1190148D00C85EFE /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Renderer.h; path = Operators/Renderer.h; sourceTree = SOURCE_ROOT; };
+		D001155311C0EA0C00D3CD40 /* OgreMaxModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreMaxModel.cpp; path = OgreMax/OgreMaxModel.cpp; sourceTree = "<group>"; };
+		D001155411C0EA0C00D3CD40 /* OgreMaxModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OgreMaxModel.hpp; path = OgreMax/OgreMaxModel.hpp; sourceTree = "<group>"; };
+		D001155511C0EA0C00D3CD40 /* OgreMaxPlatform.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OgreMaxPlatform.hpp; path = OgreMax/OgreMaxPlatform.hpp; sourceTree = "<group>"; };
+		D001155611C0EA0C00D3CD40 /* OgreMaxRenderWindowIterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OgreMaxRenderWindowIterator.hpp; path = OgreMax/OgreMaxRenderWindowIterator.hpp; sourceTree = "<group>"; };
+		D001155711C0EA0C00D3CD40 /* OgreMaxScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreMaxScene.cpp; path = OgreMax/OgreMaxScene.cpp; sourceTree = "<group>"; };
+		D001155811C0EA0C00D3CD40 /* OgreMaxScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OgreMaxScene.hpp; path = OgreMax/OgreMaxScene.hpp; sourceTree = "<group>"; };
+		D001155911C0EA0C00D3CD40 /* OgreMaxTypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OgreMaxTypes.hpp; path = OgreMax/OgreMaxTypes.hpp; sourceTree = "<group>"; };
+		D001155A11C0EA0C00D3CD40 /* OgreMaxUtilities.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OgreMaxUtilities.cpp; path = OgreMax/OgreMaxUtilities.cpp; sourceTree = "<group>"; };
+		D001155B11C0EA0C00D3CD40 /* OgreMaxUtilities.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OgreMaxUtilities.hpp; path = OgreMax/OgreMaxUtilities.hpp; sourceTree = "<group>"; };
+		D001155C11C0EA0C00D3CD40 /* ProgressCalculator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ProgressCalculator.cpp; path = OgreMax/ProgressCalculator.cpp; sourceTree = "<group>"; };
+		D001155D11C0EA0C00D3CD40 /* ProgressCalculator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = ProgressCalculator.hpp; path = OgreMax/ProgressCalculator.hpp; sourceTree = "<group>"; };
+		D001155E11C0EA0C00D3CD40 /* Version.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Version.cpp; path = OgreMax/Version.cpp; sourceTree = "<group>"; };
+		D001155F11C0EA0C00D3CD40 /* Version.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Version.hpp; path = OgreMax/Version.hpp; sourceTree = "<group>"; };
+		D00115ED11C0F6CF00D3CD40 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml.cpp; path = tinyxml/tinyxml.cpp; sourceTree = "<group>"; };
+		D00115EE11C0F6CF00D3CD40 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml.h; path = tinyxml/tinyxml.h; sourceTree = "<group>"; };
+		D001160011C0F7B500D3CD40 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlerror.cpp; path = tinyxml/tinyxmlerror.cpp; sourceTree = "<group>"; };
+		D001160111C0F7B500D3CD40 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlparser.cpp; path = tinyxml/tinyxmlparser.cpp; sourceTree = "<group>"; };
+		D00C0C19118EF60C00D8B266 /* cel.lpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; name = cel.lpp; path = Parser/cel.lpp; sourceTree = "<group>"; };
+		D00C0C1E118EF68700D8B266 /* basetype.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = basetype.cpp; path = Parser/basetype.cpp; sourceTree = "<group>"; };
+		D00C0C1F118EF68700D8B266 /* basetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = basetype.h; path = Parser/basetype.h; sourceTree = "<group>"; };
+		D00C0C20118EF68700D8B266 /* buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = buffer.cpp; path = Parser/buffer.cpp; sourceTree = "<group>"; };
+		D00C0C21118EF68700D8B266 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = Parser/buffer.h; sourceTree = "<group>"; };
+		D00C0C22118EF68700D8B266 /* callfunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = callfunction.h; path = Parser/callfunction.h; sourceTree = "<group>"; };
+		D00C0C24118EF68700D8B266 /* cel.ypp */ = {isa = PBXFileReference; explicitFileType = sourcecode.yacc; fileEncoding = 4; name = cel.ypp; path = Parser/cel.ypp; sourceTree = "<group>"; };
+		D00C0C25118EF68700D8B266 /* celparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = celparser.cpp; path = Parser/celparser.cpp; sourceTree = "<group>"; };
+		D00C0C26118EF68700D8B266 /* celparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = celparser.h; path = Parser/celparser.h; sourceTree = "<group>"; };
+		D00C0C27118EF68700D8B266 /* comparisionoperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = comparisionoperator.h; path = Parser/comparisionoperator.h; sourceTree = "<group>"; };
+		D00C0C28118EF68700D8B266 /* conditionaloperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = conditionaloperator.h; path = Parser/conditionaloperator.h; sourceTree = "<group>"; };
+		D00C0C29118EF68700D8B266 /* count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = count.h; path = Parser/count.h; sourceTree = "<group>"; };
+		D00C0C2A118EF68700D8B266 /* coveredbypixelsetoperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = coveredbypixelsetoperator.h; path = Parser/coveredbypixelsetoperator.h; sourceTree = "<group>"; };
+		D00C0C2B118EF68700D8B266 /* cuberendererpsexpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cuberendererpsexpression.h; path = Parser/cuberendererpsexpression.h; sourceTree = "<group>"; };
+		D00C0C2D118EF68700D8B266 /* expression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = expression.cpp; path = Parser/expression.cpp; sourceTree = "<group>"; };
+		D00C0C2E118EF68700D8B266 /* expression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = expression.h; path = Parser/expression.h; sourceTree = "<group>"; };
+		D00C0C30118EF68700D8B266 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = Parser/main.cpp; sourceTree = "<group>"; };
+		D00C0C31118EF68700D8B266 /* mathoperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mathoperator.h; path = Parser/mathoperator.h; sourceTree = "<group>"; };
+		D00C0C32118EF68700D8B266 /* operator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = operator.cpp; path = Parser/operator.cpp; sourceTree = "<group>"; };
+		D00C0C33118EF68700D8B266 /* operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = operator.h; path = Parser/operator.h; sourceTree = "<group>"; };
+		D00C0C34118EF68700D8B266 /* pixelsetexpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pixelsetexpression.h; path = Parser/pixelsetexpression.h; sourceTree = "<group>"; };
+		D00C0C35118EF68700D8B266 /* pixelsetoperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pixelsetoperator.h; path = Parser/pixelsetoperator.h; sourceTree = "<group>"; };
+		D00C0C36118EF68700D8B266 /* rendererpsexpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rendererpsexpression.h; path = Parser/rendererpsexpression.h; sourceTree = "<group>"; };
+		D00C0C37118EF68700D8B266 /* symbol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = symbol.cpp; path = Parser/symbol.cpp; sourceTree = "<group>"; };
+		D00C0C38118EF68700D8B266 /* symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symbol.h; path = Parser/symbol.h; sourceTree = "<group>"; };
+		D00C0C39118EF68700D8B266 /* symboltable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = symboltable.cpp; path = Parser/symboltable.cpp; sourceTree = "<group>"; };
+		D00C0C3A118EF68700D8B266 /* symboltable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symboltable.h; path = Parser/symboltable.h; sourceTree = "<group>"; };
+		D00C0C3B118EF68700D8B266 /* target.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = target.h; path = Parser/target.h; sourceTree = "<group>"; };
+		D00C0C3C118EF68700D8B266 /* targetexpression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = targetexpression.cpp; path = Parser/targetexpression.cpp; sourceTree = "<group>"; };
+		D00C0C3D118EF68700D8B266 /* targetexpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = targetexpression.h; path = Parser/targetexpression.h; sourceTree = "<group>"; };
+		D00C0C3E118EF68700D8B266 /* targetexpressionvisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = targetexpressionvisitor.h; path = Parser/targetexpressionvisitor.h; sourceTree = "<group>"; };
+		D00C0C3F118EF68700D8B266 /* targetnegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = targetnegation.h; path = Parser/targetnegation.h; sourceTree = "<group>"; };
+		D00C0C40118EF68700D8B266 /* vectoroftargets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vectoroftargets.h; path = Parser/vectoroftargets.h; sourceTree = "<group>"; };
+		D036A87B103BF690008D6C0E /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		D036A894103BF84C008D6C0E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		D036A8CE103BFBD5008D6C0E /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D036A8D0103BFBD5008D6C0E /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		D036A8D5103BFC1C008D6C0E /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test.h; path = Test/Test.h; sourceTree = "<group>"; };
+		D036A8D6103BFC30008D6C0E /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Test.cpp; path = Test/Test.cpp; sourceTree = "<group>"; };
+		D036A8DA103BFD56008D6C0E /* plugins.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = plugins.cfg; path = Test/plugins.cfg; sourceTree = "<group>"; };
+		D036A8DB103BFD56008D6C0E /* resources.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = resources.cfg; path = Test/resources.cfg; sourceTree = "<group>"; };
+		D0AAC53C1146A868002C022E /* Depth_GLSL.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Depth_GLSL.frag; path = media/Depth_GLSL.frag; sourceTree = SOURCE_ROOT; };
+		D0AAC53D1146A868002C022E /* Depth_GLSL.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Depth_GLSL.vert; path = media/Depth_GLSL.vert; sourceTree = SOURCE_ROOT; };
+		D0AAC5401146AA63002C022E /* CEL.program */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CEL.program; path = media/CEL.program; sourceTree = SOURCE_ROOT; };
+		D0D4A426114D1E66006ABA7C /* Example.material */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Example.material; sourceTree = "<group>"; };
+		D0F25F9F11C680510066A2ED /* aboveofpixelsetexpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aboveofpixelsetexpression.h; path = Parser/aboveofpixelsetexpression.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00C0ED8118EFE2500D8B266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0580C98118F09F90034414A /* IOKit.framework in Frameworks */,
+				D0580D8E118F0A210034414A /* Carbon.framework in Frameworks */,
+				50345F9711C1253900362C7B /* Ogre.framework in Frameworks */,
+				5034609411C1260700362C7B /* libois.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D036A8CC103BFBD5008D6C0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50BA740911B80E8D002CE77D /* CEL.dylib in Frameworks */,
+				D036A9C9103C002D008D6C0E /* IOKit.framework in Frameworks */,
+				50345F9611C1253900362C7B /* Ogre.framework in Frameworks */,
+				5034609311C1260700362C7B /* libois.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D036A8CE103BFBD5008D6C0E /* Test.app */,
+				50BA731111B80E8D002CE77D /* CEL.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* VirtualCameraLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D00C0C1D118EF65100D8B266 /* Parser */,
+				D036A8D8103BFD3F008D6C0E /* Resources */,
+				D036A8D4103BFBF9008D6C0E /* Test */,
+				5073E0CA09E734BC00EC74B6 /* Configuration Files */,
+				08FB77ACFE841707C02AAC07 /* Operators */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+				D036A8D0103BFBD5008D6C0E /* Test-Info.plist */,
+			);
+			name = VirtualCameraLibrary;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				50345F9A11C1255D00362C7B /* libois.a */,
+				50345F9511C1253900362C7B /* Ogre.framework */,
+				D036A894103BF84C008D6C0E /* Carbon.framework */,
+				D036A87B103BF690008D6C0E /* IOKit.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Operators */ = {
+			isa = PBXGroup;
+			children = (
+				50E477BC1190148D00C85EFE /* PixelSet.cpp */,
+				50E477BD1190148D00C85EFE /* PixelSet.h */,
+				50E477BE1190148D00C85EFE /* Renderer.cpp */,
+				50E477BF1190148D00C85EFE /* Renderer.h */,
+			);
+			path = Operators;
+			sourceTree = "<group>";
+		};
+		5001BBCF10AABAA800427279 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				50ABD8D911CBB0F50094C39D /* Scripts */,
+				5054D57E11C9035300CE18D3 /* Console.fontdef */,
+				5054D57F11C9035300CE18D3 /* Console.material */,
+				5054D58011C9035300CE18D3 /* Console.overlay */,
+				D0D4A426114D1E66006ABA7C /* Example.material */,
+				D0AAC5401146AA63002C022E /* CEL.program */,
+				D0AAC53C1146A868002C022E /* Depth_GLSL.frag */,
+				D0AAC53D1146A868002C022E /* Depth_GLSL.vert */,
+				5098C6B411CBC8AC0035C4DD /* Frame.material */,
+				507B904D11CF586800DEE857 /* Frustum.material */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
+		5054D57811C9033900CE18D3 /* OgreConsole */ = {
+			isa = PBXGroup;
+			children = (
+				5054D57911C9033900CE18D3 /* OgreConsole.cpp */,
+				5054D57A11C9033900CE18D3 /* OgreConsole.h */,
+			);
+			path = OgreConsole;
+			sourceTree = "<group>";
+		};
+		5073E0CA09E734BC00EC74B6 /* Configuration Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Configuration Files";
+			sourceTree = "<group>";
+		};
+		50ABD8D911CBB0F50094C39D /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				50ABD8DA11CBB0F50094C39D /* omniscript.cel */,
+				50ABD8DB11CBB0F50094C39D /* test.cel */,
+				50ABD8DC11CBB0F50094C39D /* test1.cel */,
+				50ABD8DD11CBB0F50094C39D /* test2.cel */,
+			);
+			name = Scripts;
+			path = build/Scripts;
+			sourceTree = SOURCE_ROOT;
+		};
+		D001155211C0E9C800D3CD40 /* OgreMax */ = {
+			isa = PBXGroup;
+			children = (
+				D00115EC11C0F69C00D3CD40 /* TinyXML */,
+				D001155311C0EA0C00D3CD40 /* OgreMaxModel.cpp */,
+				D001155411C0EA0C00D3CD40 /* OgreMaxModel.hpp */,
+				D001155511C0EA0C00D3CD40 /* OgreMaxPlatform.hpp */,
+				D001155611C0EA0C00D3CD40 /* OgreMaxRenderWindowIterator.hpp */,
+				D001155711C0EA0C00D3CD40 /* OgreMaxScene.cpp */,
+				D001155811C0EA0C00D3CD40 /* OgreMaxScene.hpp */,
+				D001155911C0EA0C00D3CD40 /* OgreMaxTypes.hpp */,
+				D001155A11C0EA0C00D3CD40 /* OgreMaxUtilities.cpp */,
+				D001155B11C0EA0C00D3CD40 /* OgreMaxUtilities.hpp */,
+				D001155C11C0EA0C00D3CD40 /* ProgressCalculator.cpp */,
+				D001155D11C0EA0C00D3CD40 /* ProgressCalculator.hpp */,
+				D001155E11C0EA0C00D3CD40 /* Version.cpp */,
+				D001155F11C0EA0C00D3CD40 /* Version.hpp */,
+			);
+			name = OgreMax;
+			sourceTree = "<group>";
+		};
+		D00115EC11C0F69C00D3CD40 /* TinyXML */ = {
+			isa = PBXGroup;
+			children = (
+				D001160011C0F7B500D3CD40 /* tinyxmlerror.cpp */,
+				D001160111C0F7B500D3CD40 /* tinyxmlparser.cpp */,
+				D00115ED11C0F6CF00D3CD40 /* tinyxml.cpp */,
+				D00115EE11C0F6CF00D3CD40 /* tinyxml.h */,
+			);
+			name = TinyXML;
+			sourceTree = "<group>";
+		};
+		D00C0C1D118EF65100D8B266 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				500A776211D275EF00806CA1 /* callfunction.cpp */,
+				500A776311D275EF00806CA1 /* quadframe.cpp */,
+				500A776411D275EF00806CA1 /* quadframe.h */,
+				500A776511D275EF00806CA1 /* viewvolume.cpp */,
+				500A776611D275EF00806CA1 /* viewvolume.h */,
+				500D7B8311D14A960019F872 /* targetfunction.cpp */,
+				500D7B8411D14A960019F872 /* targetfunction.h */,
+				50ABD82F11CB9C470094C39D /* belowofpixelsetexpression.h */,
+				50ABD83011CB9C470094C39D /* cel_lex.cpp */,
+				50ABD83111CB9C470094C39D /* cel_yacc.cpp */,
+				50ABD83211CB9C470094C39D /* cel_yacc.h */,
+				50ABD83311CB9C470094C39D /* celparserexception.h */,
+				50ABD83411CB9C470094C39D /* constant.h */,
+				50ABD83511CB9C470094C39D /* coveredbypixelsetexpression.h */,
+				50ABD83611CB9C470094C39D /* distancepixelsetoperator.h */,
+				50ABD83711CB9C470094C39D /* leftofpixelsetexpression.h */,
+				50ABD83811CB9C470094C39D /* minmaxpixelsetoperator.h */,
+				50ABD83911CB9C470094C39D /* overlappixelsetexpression.h */,
+				50ABD83A11CB9C470094C39D /* rendererpsexpression.cpp */,
+				50ABD83B11CB9C470094C39D /* rightofpixelsetexpression.h */,
+				50ABD83C11CB9C470094C39D /* silhouettepixelsetexpression.h */,
+				50ABD83D11CB9C470094C39D /* tointoperator.h */,
+				D0F25F9F11C680510066A2ED /* aboveofpixelsetexpression.h */,
+				5008EF7811907F9E00A2A087 /* target.cpp */,
+				5008EF7911907F9E00A2A087 /* targetnegation.cpp */,
+				5008EF7A11907F9E00A2A087 /* vectoroftargets.cpp */,
+				D00C0C1E118EF68700D8B266 /* basetype.cpp */,
+				D00C0C1F118EF68700D8B266 /* basetype.h */,
+				D00C0C20118EF68700D8B266 /* buffer.cpp */,
+				D00C0C21118EF68700D8B266 /* buffer.h */,
+				D00C0C22118EF68700D8B266 /* callfunction.h */,
+				D00C0C24118EF68700D8B266 /* cel.ypp */,
+				D00C0C25118EF68700D8B266 /* celparser.cpp */,
+				D00C0C26118EF68700D8B266 /* celparser.h */,
+				D00C0C27118EF68700D8B266 /* comparisionoperator.h */,
+				D00C0C28118EF68700D8B266 /* conditionaloperator.h */,
+				D00C0C29118EF68700D8B266 /* count.h */,
+				D00C0C2A118EF68700D8B266 /* coveredbypixelsetoperator.h */,
+				D00C0C2B118EF68700D8B266 /* cuberendererpsexpression.h */,
+				D00C0C2D118EF68700D8B266 /* expression.cpp */,
+				D00C0C2E118EF68700D8B266 /* expression.h */,
+				D00C0C30118EF68700D8B266 /* main.cpp */,
+				D00C0C31118EF68700D8B266 /* mathoperator.h */,
+				D00C0C32118EF68700D8B266 /* operator.cpp */,
+				D00C0C33118EF68700D8B266 /* operator.h */,
+				D00C0C34118EF68700D8B266 /* pixelsetexpression.h */,
+				D00C0C35118EF68700D8B266 /* pixelsetoperator.h */,
+				D00C0C36118EF68700D8B266 /* rendererpsexpression.h */,
+				D00C0C37118EF68700D8B266 /* symbol.cpp */,
+				D00C0C38118EF68700D8B266 /* symbol.h */,
+				D00C0C39118EF68700D8B266 /* symboltable.cpp */,
+				D00C0C3A118EF68700D8B266 /* symboltable.h */,
+				D00C0C3B118EF68700D8B266 /* target.h */,
+				D00C0C3C118EF68700D8B266 /* targetexpression.cpp */,
+				D00C0C3D118EF68700D8B266 /* targetexpression.h */,
+				D00C0C3E118EF68700D8B266 /* targetexpressionvisitor.h */,
+				D00C0C3F118EF68700D8B266 /* targetnegation.h */,
+				D00C0C40118EF68700D8B266 /* vectoroftargets.h */,
+				D00C0C19118EF60C00D8B266 /* cel.lpp */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		D036A8D4103BFBF9008D6C0E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				D001155211C0E9C800D3CD40 /* OgreMax */,
+				5054D57811C9033900CE18D3 /* OgreConsole */,
+				D036A8D6103BFC30008D6C0E /* Test.cpp */,
+				D036A8D5103BFC1C008D6C0E /* Test.h */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
+		D036A8D8103BFD3F008D6C0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5001BBCF10AABAA800427279 /* media */,
+				D036A8DA103BFD56008D6C0E /* plugins.cfg */,
+				D036A8DB103BFD56008D6C0E /* resources.cfg */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D00C0ED6118EFE2500D8B266 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00C0F10118EFE4E00D8B266 /* celparser.h in Headers */,
+				50E477C51190148D00C85EFE /* PixelSet.h in Headers */,
+				50E477C71190148D00C85EFE /* Renderer.h in Headers */,
+				D00C0F11118EFE4E00D8B266 /* comparisionoperator.h in Headers */,
+				D00C0F12118EFE4E00D8B266 /* conditionaloperator.h in Headers */,
+				D00C0F13118EFE4E00D8B266 /* count.h in Headers */,
+				D00C0F14118EFE4E00D8B266 /* coveredbypixelsetoperator.h in Headers */,
+				D00C0F15118EFE4E00D8B266 /* cuberendererpsexpression.h in Headers */,
+				D00C0F0C118EFE4E00D8B266 /* buffer.h in Headers */,
+				D00C0F1A118EFE4E00D8B266 /* mathoperator.h in Headers */,
+				D00C0F1C118EFE4E00D8B266 /* operator.h in Headers */,
+				D00C0F1D118EFE4E00D8B266 /* pixelsetexpression.h in Headers */,
+				D00C0F1E118EFE4E00D8B266 /* pixelsetoperator.h in Headers */,
+				D00C0F1F118EFE4E00D8B266 /* rendererpsexpression.h in Headers */,
+				D00C0F0D118EFE4E00D8B266 /* callfunction.h in Headers */,
+				D00C0F21118EFE4E00D8B266 /* symbol.h in Headers */,
+				D00C0F23118EFE4E00D8B266 /* symboltable.h in Headers */,
+				D00C0F24118EFE4E00D8B266 /* target.h in Headers */,
+				D00C0F26118EFE4E00D8B266 /* targetexpression.h in Headers */,
+				D00C0F27118EFE4E00D8B266 /* targetexpressionvisitor.h in Headers */,
+				D00C0F28118EFE4E00D8B266 /* targetnegation.h in Headers */,
+				D00C0F29118EFE4E00D8B266 /* vectoroftargets.h in Headers */,
+				D00C0F17118EFE4E00D8B266 /* expression.h in Headers */,
+				D00C0F0A118EFE4E00D8B266 /* basetype.h in Headers */,
+				D0F25FA011C680510066A2ED /* aboveofpixelsetexpression.h in Headers */,
+				500D7B8611D14A960019F872 /* targetfunction.h in Headers */,
+				500A776911D275EF00806CA1 /* quadframe.h in Headers */,
+				500A776B11D275EF00806CA1 /* viewvolume.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D00C0ED9118EFE2500D8B266 /* CEL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00C0EE1118EFE3600D8B266 /* Build configuration list for PBXNativeTarget "CEL" */;
+			buildPhases = (
+				D00C0ED6118EFE2500D8B266 /* Headers */,
+				D00C0ED7118EFE2500D8B266 /* Sources */,
+				D00C0ED8118EFE2500D8B266 /* Frameworks */,
+			);
+			buildRules = (
+				D0580AFE118F06320034414A /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = CEL;
+			productName = Parser;
+			productReference = 50BA731111B80E8D002CE77D /* CEL.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		D036A8CD103BFBD5008D6C0E /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D036A8D3103BFBD6008D6C0E /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				D036A8CB103BFBD5008D6C0E /* Sources */,
+				D036A8CC103BFBD5008D6C0E /* Frameworks */,
+				D090B0C811B7F54C00424311 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0580E0A118F105D0034414A /* PBXTargetDependency */,
+			);
+			name = Test;
+			productName = Test;
+			productReference = D036A8CE103BFBD5008D6C0E /* Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 1DEB916408733D950010E9CD /* Build configuration list for PBXProject "CEL" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* VirtualCameraLibrary */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D036A8CD103BFBD5008D6C0E /* Test */,
+				D00C0ED9118EFE2500D8B266 /* CEL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00C0ED7118EFE2500D8B266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50ABD86111CB9D870094C39D /* rendererpsexpression.cpp in Sources */,
+				50E477C41190148D00C85EFE /* PixelSet.cpp in Sources */,
+				50E477C61190148D00C85EFE /* Renderer.cpp in Sources */,
+				D00C0F0E118EFE4E00D8B266 /* cel.ypp in Sources */,
+				D00C0F09118EFE4E00D8B266 /* basetype.cpp in Sources */,
+				D00C0F0B118EFE4E00D8B266 /* buffer.cpp in Sources */,
+				D00C0F0F118EFE4E00D8B266 /* celparser.cpp in Sources */,
+				D00C0F16118EFE4E00D8B266 /* expression.cpp in Sources */,
+				D00C0F19118EFE4E00D8B266 /* main.cpp in Sources */,
+				D00C0F1B118EFE4E00D8B266 /* operator.cpp in Sources */,
+				D00C0F20118EFE4E00D8B266 /* symbol.cpp in Sources */,
+				D00C0F22118EFE4E00D8B266 /* symboltable.cpp in Sources */,
+				D00C0F25118EFE4E00D8B266 /* targetexpression.cpp in Sources */,
+				D00C0F2A118EFE4E00D8B266 /* cel.lpp in Sources */,
+				5008EF7B11907F9E00A2A087 /* target.cpp in Sources */,
+				5008EF7C11907F9E00A2A087 /* targetnegation.cpp in Sources */,
+				5008EF7D11907F9E00A2A087 /* vectoroftargets.cpp in Sources */,
+				500D7B8511D14A960019F872 /* targetfunction.cpp in Sources */,
+				500A776711D275EF00806CA1 /* callfunction.cpp in Sources */,
+				500A776811D275EF00806CA1 /* quadframe.cpp in Sources */,
+				500A776A11D275EF00806CA1 /* viewvolume.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D036A8CB103BFBD5008D6C0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00115EF11C0F6CF00D3CD40 /* tinyxml.cpp in Sources */,
+				D036A8D7103BFC30008D6C0E /* Test.cpp in Sources */,
+				D001156011C0EA0C00D3CD40 /* OgreMaxModel.cpp in Sources */,
+				D001156111C0EA0C00D3CD40 /* OgreMaxScene.cpp in Sources */,
+				D001156211C0EA0C00D3CD40 /* OgreMaxUtilities.cpp in Sources */,
+				D001156311C0EA0C00D3CD40 /* ProgressCalculator.cpp in Sources */,
+				D001156411C0EA0C00D3CD40 /* Version.cpp in Sources */,
+				D001160211C0F7B500D3CD40 /* tinyxmlerror.cpp in Sources */,
+				D001160311C0F7B500D3CD40 /* tinyxmlparser.cpp in Sources */,
+				50ABD88811CB9EBB0094C39D /* cel_lex.cpp in Sources */,
+				50ABD88911CB9EBB0094C39D /* cel_yacc.cpp in Sources */,
+				5054D57B11C9033900CE18D3 /* OgreConsole.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0580E0A118F105D0034414A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D00C0ED9118EFE2500D8B266 /* CEL */;
+			targetProxy = D0580E09118F105D0034414A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB916508733D950010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_VERSION = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(OGRESDK_HOME)/Dependencies/Ogre.framework/Headers/**";
+				LIBRARY_SEARCH_PATHS = "$(OGRESDK_HOME)/Dependencies/**";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				VALID_ARCHS = i386;
+			};
+			name = Debug;
+		};
+		1DEB916608733D950010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(OGRESDK_HOME)/Dependencies/Ogre.framework/Headers/**";
+				LIBRARY_SEARCH_PATHS = "$(OGRESDK_HOME)/Dependencies/**";
+				PREBINDING = NO;
+				PRODUCT_NAME = CEL;
+			};
+			name = Release;
+		};
+		D00C0EDB118EFE2500D8B266 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Library/Frameworks,
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CEL.pch;
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = (
+					"$(OGRESDK_HOME)/Dependencies/Ogre.framework/Headers/**",
+					"$(SRCROOT)/**",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Release\"",
+					"\"$(SRCROOT)/../OgreSDK/Dependencies/lib/Release\"/**",
+					"\"$(SRCROOT)\"",
+					"\"$(SYSTEM_APPS_DIR)/OgreSDK/Dependencies/lib/Release\"",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CEL;
+			};
+			name = Debug;
+		};
+		D00C0EDC118EFE2500D8B266 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Library/Frameworks,
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CEL.pch;
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = (
+					"$(OGRESDK_HOME)/Dependencies/Ogre.framework/Headers/**",
+					"$(SRCROOT)/**",
+				);
+				INSTALL_PATH = /usr/local/lib;
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Release\"",
+					"\"$(SRCROOT)/../OgreSDK/Dependencies/lib/Release\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SYSTEM_APPS_DIR)/OgreSDK/Dependencies/lib/Release\"",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = CEL;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D036A8D1103BFBD6008D6C0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(OGRESDK_HOME)/Dependencies/**",
+					/Library/Frameworks,
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CEL.pch;
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = (
+					"$(OGRESDK_HOME)/Dependencies/**",
+					"$(OGRESDK_HOME)/Samples/**",
+					"$(OGRESDK_HOME)/Dependencies/Ogre.framework/Headers",
+					"$(SRCROOT)/**",
+				);
+				INFOPLIST_FILE = "Test-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "$(OGRESDK_HOME)/Dependencies/lib/Release $(OGRESDK_HOME)/Dependencies";
+				LIBRARY_SEARCH_PATHS = (
+					"$(OGRESDK_HOME)/Dependencies/lib/Release/**",
+					"\"$(SYSTEM_APPS_DIR)/OgreSDK/Dependencies/lib/Release\"",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Test;
+			};
+			name = Debug;
+		};
+		D036A8D2103BFBD6008D6C0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(OGRESDK_HOME)/Dependencies/**",
+					/Library/Frameworks,
+					"$(HOME)/Library/Frameworks",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CEL.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TIXML_USE_STL,
+					DEBUG,
+				);
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = (
+					"$(OGRESDK_HOME)/Dependencies/**",
+					"$(OGRESDK_HOME)/Samples/**",
+					"$(OGRESDK_HOME)/Dependencies/Ogre.framework/Headers",
+					"$(SRCROOT)/**",
+				);
+				INFOPLIST_FILE = "Test-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = "$(OGRESDK_HOME)/Dependencies/lib/Release $(OGRESDK_HOME)/Dependencies";
+				LIBRARY_SEARCH_PATHS = (
+					"$(OGRESDK_HOME)/Dependencies/lib/Release",
+					"$(SRCROOT)/build/Release",
+					"$(SRCROOT)",
+					"$(SYSTEM_APPS_DIR)/OgreSDK/Dependencies/lib/Release",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					Carbon,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = Test;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB916408733D950010E9CD /* Build configuration list for PBXProject "CEL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB916508733D950010E9CD /* Debug */,
+				1DEB916608733D950010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D00C0EE1118EFE3600D8B266 /* Build configuration list for PBXNativeTarget "CEL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00C0EDB118EFE2500D8B266 /* Debug */,
+				D00C0EDC118EFE2500D8B266 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D036A8D3103BFBD6008D6C0E /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D036A8D1103BFBD6008D6C0E /* Debug */,
+				D036A8D2103BFBD6008D6C0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

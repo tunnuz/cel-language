@@ -1,0 +1,1773 @@
+material 02-Default
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 
+			diffuse 0.588235 0.588235 0.588235 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture TransporterTrailer.tga
+			}
+		}
+	}
+}
+
+
+material 06-Default
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 
+			diffuse 0.588235 0.588235 0.588235 
+			specular 0.72 0.72 0.72 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture spitfire1.tga
+			}
+		}
+	}
+}
+
+
+material 09-Default
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 
+			diffuse 0.588235 0.588235 0.588235 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture WHTPLANK2.jpg
+			}
+		}
+	}
+}
+
+
+material 10-Default
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 
+			diffuse 0.588235 0.588235 0.588235 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture bus.tga
+			}
+		}
+	}
+}
+
+
+material 10-Default2
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 
+			diffuse 0.588235 0.588235 0.588235 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture bus.tga
+			}
+		}
+	}
+}
+
+
+material 17-Default
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 
+			diffuse 0.588235 0.588235 0.588235 
+			specular 0 0 0 10
+			emissive 1 1 1 
+
+			texture_unit 
+			{
+				texture skygrey.tga
+			}
+		}
+	}
+}
+
+
+material 20-Default
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 
+			diffuse 0.588235 0.588235 0.588235 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture 71spitfire.tga
+			}
+		}
+	}
+}
+
+
+material 21-Default
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#166
+	{
+		pass Map#167
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend src_alpha one_minus_dest_colour
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection greater 150
+			cull_hardware none
+			cull_software none
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#168
+			{
+				texture ChainlinkFence.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#11
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.282353 0.282353 0.282353 
+			diffuse 0.282353 0.282353 0.282353 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture concrete1.tga
+			}
+		}
+	}
+}
+
+
+material Material#12
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+		}
+	}
+}
+
+
+material Material#13
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1 
+			diffuse 1 1 1 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture concrete032.jpg
+			}
+		}
+	}
+}
+
+
+material Material#15
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture concrete032.jpg
+			}
+		}
+	}
+}
+
+
+material Material#1527
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture crate.tga
+			}
+		}
+	}
+}
+
+
+material Material#1710
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#124
+	{
+		pass Map#125
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 10
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading phong
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#126
+			{
+				texture floor090.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#127
+			{
+				texture groundplanelightmap2.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1711
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#128
+	{
+		pass Map#129
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 0 10
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading phong
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#130
+			{
+				texture concrete1.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#131
+			{
+				texture groundplanelightmap2.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1712
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#132
+	{
+		pass Map#133
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 10
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading phong
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#134
+			{
+				texture concretepale.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#135
+			{
+				texture groundplanelightmap2.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1713
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#136
+	{
+		pass Map#137
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#138
+			{
+				texture rock.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#151
+			{
+				texture groundplanelightmap2.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1714
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#147
+	{
+		pass Map#148
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 10
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading phong
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#149
+			{
+				texture concretepale.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#150
+			{
+				texture groundplanelightmap2.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1715
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#143
+	{
+		pass Map#144
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 0 10
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading phong
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#145
+			{
+				texture Tiles.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#146
+			{
+				texture groundplanelightmap2.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1716
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#139
+	{
+		pass Map#140
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 0 100
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#141
+			{
+				texture Grass2.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#142
+			{
+				texture groundplanelightmap2.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1721
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#169
+	{
+		pass Map#170
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#175
+			{
+				texture wood.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#171
+			{
+				texture buildingscompletemap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1732
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#156
+	{
+		pass Map#157
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#159
+			{
+				texture bridgesupport.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#158
+			{
+				texture freeway2completemap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1733
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#156
+	{
+		pass Map#157
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#161
+			{
+				texture concrete1.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#158
+			{
+				texture freeway2completemap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1734
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#156
+	{
+		pass Map#157
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#160
+			{
+				texture concretepale.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#158
+			{
+				texture freeway2completemap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1735
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#156
+	{
+		pass Map#157
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#162
+			{
+				texture concretepale.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#158
+			{
+				texture freeway2completemap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1743
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#152
+	{
+		pass Map#153
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#154
+			{
+				texture concrete1.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#155
+			{
+				texture CarparkCompleteMap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1745
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#152
+	{
+		pass Map#153
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#154
+			{
+				texture dustbin.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#155
+			{
+				texture CarparkCompleteMap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1746
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#152
+	{
+		pass Map#153
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#154
+			{
+				texture concrete1.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#155
+			{
+				texture CarparkCompleteMap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1747
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#152
+	{
+		pass Map#153
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#154
+			{
+				texture concretepale.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#155
+			{
+				texture CarparkCompleteMap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1753
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture TransporterTrailer.tga
+			}
+		}
+	}
+}
+
+
+material Material#1754
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture Truck.tga
+			}
+		}
+	}
+}
+
+
+material Material#1765
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#184
+	{
+		pass Map#185
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 80
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware none
+			cull_software none
+			lighting on
+			shading phong
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#186
+			{
+				texture 71spitfire.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material Material#1776
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture Manhole.tga
+			}
+		}
+	}
+}
+
+
+material Material#1788
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#187
+	{
+		pass Map#188
+		{
+			ambient 0 0 0 1
+			diffuse 0 0 0 1
+			specular 0 0 0 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+		}
+
+	}
+
+}
+
+material NoMaterial
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.7 0.7 0.7 
+			diffuse 0.7 0.7 0.7 
+		}
+	}
+}
+
+
+material Trees
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#163
+	{
+		pass Map#164
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend src_alpha one_minus_dest_alpha
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection greater 150
+			cull_hardware none
+			cull_software none
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#165
+			{
+				texture TreeBranch.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material bricks
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#169
+	{
+		pass Map#170
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#172
+			{
+				texture bricks.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+			texture_unit Map#171
+			{
+				texture buildingscompletemap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material env
+{
+	receive_shadows on
+	transparency_casts_shadows off
+	technique Map#169
+	{
+		pass Map#170
+		{
+			ambient 0.698039 0.698039 0.698039 1
+			diffuse 0.698039 0.698039 0.698039 1
+			specular 0.898039 0.898039 0.898039 1 20
+			emissive 0 0 0 1
+			scene_blend one zero
+			depth_check on
+			depth_write on
+			depth_func less_equal
+			depth_bias 0 0
+			alpha_rejection always_pass 0
+			cull_hardware clockwise
+			cull_software back
+			lighting on
+			shading gouraud
+			polygon_mode solid
+			colour_write on
+			max_lights 8
+			start_light 0
+			iteration once 
+			texture_unit Map#173
+			{
+				texture EnvMap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 0
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map cubic_reflection
+			}
+
+			texture_unit Map#171
+			{
+				texture buildingscompletemap.tga 2d unlimited  
+				binding_type fragment
+				tex_coord_set 1
+				tex_address_mode wrap wrap wrap
+				tex_border_colour 0 0 0 1
+				filtering trilinear
+				max_anisotropy 1
+				mipmap_bias 0
+				colour_op_ex modulate src_texture src_current
+				alpha_op_ex modulate src_texture src_current
+				colour_op_multipass_fallback one zero
+				env_map off
+			}
+
+		}
+
+	}
+
+}
+
+material manole
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture Manhole.tga
+			}
+		}
+	}
+}
+
+
+material pavement
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+		}
+	}
+}
+
+
+material post
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture lamppost.tga
+			}
+		}
+	}
+}
+
+
+material sign
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture Streetsign.tga
+			}
+		}
+	}
+}
+
+
+material trash
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture dustbin.tga
+			}
+		}
+	}
+}
+
+
+material wheel
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588 0.588 0.588 
+			diffuse 0.588 0.588 0.588 
+			specular 0 0 0 10
+			emissive 0 0 0 
+
+			texture_unit 
+			{
+				texture 71spitfire.tga
+			}
+		}
+	}
+}
+
+

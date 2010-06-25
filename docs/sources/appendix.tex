@@ -1,0 +1,79 @@
+\section{Grammar} \label{grammar}
+
+In the following, we describe the BFN grammar for CEL scripts.
+
+\begin{small}
+\begin{verbatim}
+<CEL> ::=
+  [ <list_of_includes> ]
+'Declare' 
+  [ <list_of_declarations> ]
+'Evaluate'
+  [ <list_of_evaluators> ] 
+  
+<list_of_includes> ::= [ <list_of_includes> ] 'include'  '"' filename '"'
+
+<list_of_declarations> ::= [ <list_of_declarations> ] <declaration>
+
+<declaration> ::= <leftbody_declaration> '=' <expression> ';'
+
+<leftbody_declaration> ::=  <symbol> | <symbol> '(' <list_of_leftArguments> ')'
+
+<list_of_leftArguments> ::= [<list_of_leftArguments> ','] <symbol>
+
+<expression> ::= DOUBLE 
+    | '(' <expression> ')'
+    | "sqrt" '(' <expression> ')' 
+    | "sqr" '(' <expression> ')' 
+    | "sin" '(' <expression> ')' 
+    | "cos" '(' <expression> ')' 
+    | "tan" '(' <expression> ')' 
+    | "asin" '(' <expression> ')' 
+    | "acos" '(' <expression> ')' 
+    | "atan" '(' <expression> ')' 
+    | "atan2" '(' <expression> ',' <expression> ')' 
+    | "exp" '(' <expression> ')' 
+    | "count" '(' <pixelsetExpression> ')'
+    | "maxx" '(' <pixelsetExpression> ')'
+    | "minx" '(' <pixelsetExpression> ')'
+    | "maxy" '(' <pixelsetExpression> ')'
+    | "miny" '(' <pixelsetExpression> ')'
+    | "distance" '(' <pixelsetExpression> ',' <pixelsetExpression> ')'
+    | '-' <expression> 
+    | <expression> '-' <expression>
+    | <expression> '+' <expression>    
+    | <expression> '*' <expression>
+    | <expression> '/' <expression>
+    | <expression> '^' <expression>
+    | <symbol>
+    | <symbol> '(' <list_of_rightArguments> ')'
+    | "if" '(' <condition> ')' <expression> "else" <expression> 
+
+<condition> ::= <expression> <CMP> <expression> 
+    
+<list_of_rightArguments> ::= [ <list_of_rightArguments> ','] <expression>
+        
+<pixelsetExpression> ::=  "Cuberender" '(' <targetExpression> ')'         
+    | "Render" '(' <Targets> ')'
+    | "Silhouette" '(' <pixelsetExpression> ')'
+    | "CoveredBy '(' <pixelsetExpression> ',' <pixelsetExpression> ')'
+    | "LeftOf" '(' <pixelsetExpression> ',' <pixelsetExpression> ')'
+    | "RightOf" '(' <pixelsetExpression> ',' <pixelsetExpression> ')'
+    | "AboveOf" '(' <pixelsetExpression> ',' <pixelsetExpression> ')'
+    | "BelowOf" '(' <pixelsetExpression> ',' <pixelsetExpression> ')'
+    | "Overlap" '(' <pixelsetExpression> ',' <pixelsetExpression> ')'
+
+<targetExpression> ::= <target> 
+    | '!' <target>
+    | '!' '[' <list_of_targets> ']' 
+
+
+<list_of_targets> ::= [ <list_of_targets> ',' ] <target> 
+        
+<target> ::= '"' targetName '"'
+
+<list_of_evaluators> ::= [ <list_of_evaluators> ] <evaluator>
+
+<evaluator> ::= <expression> ';'
+\end{verbatim}
+\end{small}

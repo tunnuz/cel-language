@@ -1,0 +1,243 @@
+%{
+
+/*
+--------------------------------------------------------------------------------
+This source file is part of CEL (Camera Evaluation Language), a research project
+by Marc Christie (INRIA-Rennes, France), Roberto Ranon and Tommaso Urli (both
+from HCI-Lab, University of Udine, Italy).
+
+For the latest info, see http://www.cameracontrol.org/language
+
+Copyright (c) 2010 INRIA Rennes, France and University of Udine, Italy
+Also see acknowledgements in Readme.txt
+
+If you use, modify, or simply find this code interesting please let us know
+at info@cameracontrol.org.
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU Lesser General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 59 Temple
+Place - Suite 330, Boston, MA 02111-1307, USA, or go to
+http://www.gnu.org/copyleft/lesser.txt.
+--------------------------------------------------------------------------------
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <errno.h>
+#include "celparser.h"
+#include "cel_yacc.h"
+
+    int yyparse(void);
+    int main(int, char **);
+    int yyerror(char *s);
+        
+%}
+
+
+
+
+DIGIT [0-9]
+UREAL {DIGIT}+(\.{DIGIT}*([eE][+-]?{DIGIT}+)?)?
+REAL  {DIGIT}+(\.{DIGIT}*([eE][+-]?{DIGIT}+)?)?
+
+    
+
+%s SET_MODE
+%s LEFT_ARG_MODE
+%x INCLUDE_MODE
+
+%x COMMENT
+
+%option noyywrap
+%%
+
+[\t\n ]
+
+"//".*
+
+"/*" BEGIN COMMENT;
+
+<COMMENT>"*/"  BEGIN INITIAL;
+<COMMENT>. |
+<COMMENT>\n {;}
+
+{REAL} {errno = 0;
+        yylval.doubleType = strtod(yytext, (char **)NULL);
+        if (errno == 0)
+            return DOUBLE;
+        else
+            yyerror(" Error in converting string --> double");
+        }
+
+
+sqrt {return SQRT;}
+sqr {return SQR;}
+sin {return SIN;}
+cos {return COS;}
+tan {return TAN;}
+asin {return ASIN;}
+acos {return ACOS;}
+atan {return ATAN;}
+atan2 {return ATAN2;}
+exp {return EXP;}
+if {return IF;}
+else {return ELSE;}
+rect {return RECT;}
+viewvolume {return VIEWVOLUME;}
+
+count |
+Count |
+COUNT {return COUNT;}
+
+coveredby |
+Coveredby |
+CoveredBy |
+COVEREDBY {return COVEREDBY;}
+
+overlap |
+Overlap |
+OVERLAP {return OVERLAP;}
+
+left |
+Left |
+LEFT {return LEFTOF;}
+
+right |
+Right |
+RIGHT {return RIGHTOF;}
+
+below |
+Below |
+BELOW {return BELOWOF;}
+
+above |
+Above |
+ABOVE {return ABOVEOF;}
+
+distance |
+Distance |
+DISTNACE {return DISTANCE;}
+
+minx |
+Minx |
+minX |
+MinX |
+MINX { return MINX; }
+
+maxx |
+Maxx |
+maxX |
+MaxX |
+MAXX { return MAXX; }
+
+miny |
+Miny |
+minY |
+MinY |
+MINY { return MINY; }
+
+maxy |
+Maxy |
+maxY |
+MaxY |
+MAXY { return MAXY; }
+
+render |
+Render |
+R {return RENDER;}
+
+cuberender |
+Cuberender |
+CubeRender |
+CR {return CUBERENDER;}
+
+silhouette |
+Silhouette |
+SILHOUETTE {return SILHOUETTE;}
+
+declare |
+Declare |
+DECLARE {return DECLARE;}
+
+evaluate |
+Evaluate |
+EVALUATE {return EVALUATE;}
+
+imageWidth {return IMAGEWIDTH;}
+
+imageHeight {return IMAGEHEIGHT;}
+
+
+include {BEGIN INCLUDE_MODE;return CEL_INCLUDE;}
+
+<INCLUDE_MODE>[a-zA-Z\.\/][a-zA-Z0-9_\.\/]* {
+    yylval.stringType = strdup(yytext);
+    BEGIN INITIAL;
+    return FILENAME; 
+}
+
+
+<INCLUDE_MODE>"\"" {return yytext[0];}
+
+"\"" {return yytext[0];}
+
+"+"  {yylval.stringType = strdup(yytext);return yytext[0];}
+
+"-"  {yylval.stringType = strdup(yytext);return yytext[0];}
+
+"/"  {yylval.stringType = strdup(yytext);return yytext[0];}
+
+"*" {yylval.stringType = strdup(yytext);return yytext[0];}
+
+"^" {yylval.stringType = strdup(yytext);return yytext[0];}
+
+"!" {yylval.stringType = strdup(yytext);return yytext[0];}
+
+"," {return yytext[0];}
+
+"=" {return yytext[0];}
+
+"==" |
+">=" | 
+">"  |
+"<=" |
+"<"  |
+"!=" {yylval.stringType = strdup(yytext);return CMP;}
+
+
+[a-zA-Z][a-zA-Z0-9_\-]* {yylval.stringType = strdup(yytext);
+ return FUNCTION;}
+
+<<EOF>> {if (CEL::CelParser::getSingletonParser()->m_flexInputBuffers.bufferSize() > 1) return CELEOF;
+         else
+             return 0;
+        }
+
+    
+
+. {return yytext[0];}
+
+
+
+%%
+
+int yyerror(char *str) {
+
+	char error[1024];
+	sprintf(error, "%s:%d: error near token '%s' : %s \n", CEL::CelParser::getSingletonParser()->m_flexInputBuffers.getFileName().c_str(),yylineno,yytext,str);
+	
+	throw CEL::CelParserException(error);
+}
+
+
+

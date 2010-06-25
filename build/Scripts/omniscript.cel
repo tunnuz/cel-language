@@ -1,0 +1,46 @@
+Declare
+
+// Area of the object relative to the screen area
+Area(obj) = Count(Render(obj)) / (imageWidth * imageHeight);
+
+// Relative left of
+LeftOf(obj1,obj2) = 
+	if (Count(Render(obj1)) > 0)
+		Count(Left(Render(obj1), Render(obj2))) / Count(Render(obj1)) 
+	else 
+		-1;
+		
+// Occluded fraction
+Occluded(obj) =	
+	if (Count(Render(obj)) > 0)
+		Count(CoveredBy(Render(obj), Render(!obj))) / Count(Render(obj)) 
+	else 
+		-1;
+
+// How much of an object is visible?
+InViewVolume(obj) = Count(Overlap(CubeRender(obj), CubeRender(viewvolume))) / Count(CubeRender(obj));
+
+// Framing
+Framing(obj, sas) = Count(Overlap(Render(obj), Render(sas))) / Count(Render(obj));
+
+
+Evaluate
+
+/** Working examples */
+
+LeftOf("transporter1","transporter03");
+
+Area("transporter1");
+
+Count(CubeRender(viewvolume));
+
+Occluded("transporter1");
+
+InViewVolume("spitfire");
+
+Count(Render(rect(0.0, 1.0, 1.0, -1.0)));
+
+/** Not working */
+
+// Framing("transporter1", rect(0.0, 1.0, 1.0, -1.0));
+

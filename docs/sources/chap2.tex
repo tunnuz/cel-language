@@ -1,0 +1,102 @@
+\section{Compiling CEL} \label{build}
+
+	At the current state of development, CEL can be compiled under MacOSX, Linux and Windows. The code bundle available from the
+	\href{http://www.cameracontrol.org/language}{CEL website} contains an Xcode project, a set of Makefiles and a Visual Studio 
+	2008 solution, therefore building it is pretty straightforward whatever your platform. 
+	
+	Follow the instructions in the next sections to know what to do before running the build phases.
+	
+	\subsection{MacOSX}
+		
+		To compile CEL under MacOSX you need:
+	
+		\begin{itemize}
+			\setlength{\itemsep}{2pt}
+			\setlength{\parskip}{0pt}
+			\setlength{\parsep}{0pt}
+			
+			\item the \textbf{Xcode} developer's tool chain, which you can get from your MacOSX setup disc, and
+			\item the \textbf{Ogre SDK}, which is freely downloadable from the \href{http://www.ogre3d.org}{Ogre website}, we have used
+			Ogre SDK 1.6.3, but any latter version should be good.
+		\end{itemize}
+		
+		\noindent
+		Most libraries, under MacOSX, are shipped in form of a framework bundle (a file with extension \emph{.framework}) which contains 
+		all the files needed to develop using the library, Ogre SDK follows this convention.
+		After downloading the Ogre SDK, you will find the framework bundle under \textbf{OgreSDK/lib/release/Ogre.framework}. Make
+		sure to copy it to \textbf{/Library/Frameworks} before compiling.
+		
+		The Xcode project shipped with the CEL code is configured assuming that the Ogre SDK is installed in \textbf{/Applications/OgreSDK}. 
+		If you stick with this convention everything is going to be at the right place when compiling. Otherwise we assume that you're
+		expert enough to modify the paths in the project.
+		
+		The last thing to do before building the project is to set an \texttt{OGRESDK\_HOME} environment variable to point
+		\textbf{/Applications/OgreSDK}. You can set this variable by typing, in your Terminal:
+		
+		\begin{verbatim}
+			open ~/.MacOSX/environment.plist
+		\end{verbatim}
+
+		\noindent
+		\textbf{Note:} always remember to log out and log in to make the environment variable effective.
+		
+		After all these operations have been carried out, you can just open the CEL Xcode project and click on "Build" or
+		"Build and Run".
+
+	\subsection{Linux}
+	
+		A set of \href{http://doc.trolltech.com/4.2/qmake-manual.html}{qmake} files is ready on the repository. You can use these files to
+		build CEL under Linux.
+		
+	\subsection{Windows}
+	
+	    A ready-to-use Visual Studio solution to build CEL under Windows will be ready as soon as possible. However if you manage to get it
+	    build before us, just make us know so that we save some time ;)
+	    
+	    
+\section{Running CEL} \label{test}
+
+    Even if the CEL API can be invoked from any standard Ogre application, integrating the library into one's source code can take some time and, moreover, requires some programming skills. For this reason, together with the CEL's source code, we provide a simple test application which can be used to give CEL a try and understand its functioning; the application is compiled during the normal CEL build procedure.
+
+    The test application allows one to load a 3D scene from a \href{http://www.ogre3d.org/tikiwiki/DotScene}{DotScene} (\emph{.scene}) file, load some CEL scripts (\emph{.cel}) and evaluate them against the scene. This section will describe ways to operate the test application.
+
+    	\subsection{Conventions and defaults}
+
+    		When the application starts, the test scene located ad \texttt{trunk/media/scene} is loaded, together with a test CEL script. You can modify the default script
+    		to make some tests or learn by example about the language syntax. By convention all the test scripts (even the default one, \texttt{omniscript.cel}) have a lowercase
+    		alphanumeric filename ending with ".cel" and are located in the \texttt{trunk/build/Scripts} directory.
+
+    		Within the application, you can use \textbf{W}, \textbf{A}, \textbf{S}, \textbf{D} and mouse pointing to fly around the 3D scene.
+
+    	\subsection{Using the test console}
+
+    		The test application is equipped with a console which allows you to perform some basic operations. You can spawn or hide the console by pressing the \textbf{Tab} key on your keyboard. Here is a quick summary of the available commands.
+
+    		\begin{itemize}
+    			\setlength{\itemsep}{2pt}
+    			\setlength{\parskip}{0pt}
+    			\setlength{\parsep}{0pt}
+
+    			\item   \texttt{help} prints a summary of the available commands.
+    			\item 	\texttt{load <filename>} allows to load a CEL script from the scripts directory, you must specify the filename without ".cel" extension.
+    			\item 	\texttt{reload} reloads the currently loaded script, this enables one to modify the script and execute it again. The same result can be obtained by 
+    					pressing \textbf{R} on the keyboard when the console is inactive.
+    			\item   \texttt{evaluate} evaluates the currently loaded script against the scene. The same result can be obtained by pressing \textbf{E} on the keyboard when
+    					the console is inactive.
+    			\item   \texttt{clear} clears the console.
+    			\item   \texttt{exit} or \texttt{quit} terminates the application.
+    		\end{itemize}
+
+    	    \noindent
+    		The result of the evaluation will be flushed in the console, if you have multiple expressions in a single file (this is the case of \texttt{omniscript.cel}), you will have numbered results:
+
+    		\begin{verbatim}
+        > evaluate
+          Result[0] = 29372
+          Result[1] = 2233
+          ...
+    		\end{verbatim}
+
+    		\noindent
+    		To exit the application just press \textbf{Esc} with the console closed or use the \textbf{quit}/\textbf{exit} command.
+    
