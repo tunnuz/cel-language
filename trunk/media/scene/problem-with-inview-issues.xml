@@ -1,0 +1,7 @@
+<problem id="VCE Problem" positionLowerCorner="-150 0 -150" positionUpperCorner="150 100 150" lookAtLowerCorner="-150 0 -150" lookAtUpperCorner="150 100 150" minRoll="0" maxRoll="0" minFOVy="0.785398" maxFOVy="0.785398">
+    <constraints>
+        <constraint id="aaa" type="InViewVolume" weight="1" fromTime="0" toTime="0" min="0" max="1" value="1" object0="transporter03" />
+        <constraint id="bbb" type="Occlusion" weight="1" fromTime="0" toTime="0" min="0" max="1" value="0" object0="transporter03" />
+        <constraint id="size" type="Size" weight="1" fromTime="0" toTime="0" min="0" max="1" value="0.4" object0="transporter03" />
+    </constraints>
+</problem>

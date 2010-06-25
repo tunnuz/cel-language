@@ -1,0 +1,15 @@
+<VCCproblems>
+	<problem id="main" bounds="-60.0,60.0,
+								-3.0,20.0,
+								-50.0,50.0,
+								0.0,0.0,
+								0.0,360.0,
+								0.0,0.0,
+								30.0,90.0,1.0,2.0">
+		<object id="71spitfire" frontVector="1,0,0.0" upVector="0,1,0"/>
+		
+		<property id="infov" type="objInFov" ref="71spitfire" bestValue="1" weight="1"/>
+		<property id="not occluded" type="objOcclusion" ref="71spitfire" bestValue="0" weight="1"/>
+                
+	</problem>
+</VCCproblems>

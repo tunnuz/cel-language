@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'CEL' target in the 'CEL' project.
+//
+
+#include <iostream>
+#include <Ogre.h>

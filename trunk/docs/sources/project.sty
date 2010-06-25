@@ -1,0 +1,140 @@
+%%% Needed declarations %%%
+\NeedsTeXFormat{LaTeX2e}
+
+%%% Required for Margin %%%
+\RequirePackage[bindingoffset=1cm, left=3cm, right=3cm, top=3cm, bottom=3cm]{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{hyperref}
+
+%%% TODO and FIXME lists
+\usepackage{color}
+\usepackage{index} % use index package to create indices
+\newindex{todo}{tod}{tnd}{TODO List} % start todo list
+\newindex{fixme}{fix}{fnd}{FIXME List} % start fixme list
+\newcommand{\todo}[1]{\textcolor{blue}{[TODO: #1]}\index[todo]{#1}} % macro for todo entries
+\newcommand{\fixme}[1]{\textcolor{red}{[FIXME: #1]}\index[fixme]{#1}} % macro for fixme entries
+\usepackage{enumerate}
+\usepackage{blindtext}
+\usepackage{tocbibind}
+\usepackage{makeidx}
+\usepackage{listings}
+
+%%% Redefinition of the foot line %%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyfoot[LO]{\rightmark}
+\fancyfoot[RE]{\leftmark}
+\fancyfoot[LE, RO]{\bfseries\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+%%% Don't hypernate following words 
+%\hyphenation{}
+
+%%% Declarations of new commands %%%
+\newcommand{\@documenttitle}{Senza Titolo}
+\newcommand{\@version}{Versione}
+\newcommand{\@motto}{}
+\newcommand{\@project}{Project Name}
+\newcommand{\@documentauthor}{Default author}
+\newcommand{\@startdate}{Default begin date}
+\newcommand{\@lastdate}{Default last edit date}
+
+%%% Implementation of previously declared commands %%%
+\newcommand{\documenttitle}[1]{
+	\renewcommand{\@documenttitle}{\uppercase{#1}}
+}
+
+\newcommand{\motto}[1]{
+	\renewcommand{\@motto}{\textit{"#1"}}
+}
+
+\newcommand{\version}[1]{
+	\renewcommand{\@version}{#1}
+}
+
+\newcommand{\project}[1]{
+	\renewcommand{\@project}{#1}
+}
+
+\newcommand{\documentauthor}[1]{
+	\renewcommand{\@documentauthor}{#1}
+}
+
+\newcommand{\startdate}[1]{
+	\renewcommand{\@startdate}{#1}
+}
+
+\newcommand{\lastdate}[1]{
+	\renewcommand{\@lastdate}{#1}
+}
+
+\newcommand{\documentdate}[1]
+{
+	\date{#1}
+}
+
+\newcommand{\clearemptydoublepage}
+{
+	\newpage{\pagestyle{empty}
+	\cleardoublepage}
+}
+
+%%% Redefinition of title page %%%
+\renewcommand\maketitle
+{
+    \begin{titlepage}
+        \begin{large}
+	        \begin{center}
+	            \begin{Large}
+	                \textit{\@project} \\
+	            \end{Large}
+	            \rule{9cm}{.4pt}\\
+	                
+	            \bigskip\bigskip\bigskip\bigskip\bigskip
+	            \bigskip\bigskip\bigskip\bigskip\bigskip
+	            \bigskip\bigskip\bigskip\bigskip\bigskip
+	            \bigskip\bigskip\bigskip\bigskip\bigskip
+                \bigskip\bigskip\bigskip\bigskip\bigskip
+	            
+	            {
+	                \vfil
+		            \begin{Huge}
+		                {
+		                    \renewcommand{\\}{\cr}
+    		                \halign{
+    		                    \hbox to \textwidth{\strut\hfil##\hfil}
+    		                    \cr
+    		                    \@documenttitle
+    		                    \cr
+    		                    \begin{large}
+    		                        \@motto
+    		                    \end{large}
+    		                    \cr
+    		                }
+    		            }
+	                \end{Huge}
+	            }
+                \bigskip\bigskip\bigskip\bigskip\bigskip
+                \bigskip\bigskip\bigskip\bigskip\bigskip
+                \bigskip\bigskip\bigskip\bigskip\bigskip
+                \bigskip\bigskip\bigskip\bigskip\bigskip
+	            \bigskip\bigskip\bigskip\bigskip\bigskip
+                
+	            \begin{normalsize}
+		            \vtop{\textbf{\textsc{Doc. Version:} \@version}} 
+		            \bigskip
+		            \textsc{Created} \@startdate \textsc{ and last modified:} \@lastdate \\
+		            \rule{9cm}{.4pt}\\
+		            \medskip
+		            \textsc{by} \@documentauthor\\
+		        \end{normalsize}
+	        \end{center}
+        \end{large}
+        \clearemptydoublepage
+    \end{titlepage}
+}
+
+\endinput

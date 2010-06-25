@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'CEL' target in the 'CEL' project.
+//
+
+#if defined( __APPLE_CC__)
+	#include <Carbon/Carbon.h>
+#endif
+#include "Ogre.h"
+#include <iostream>
+
+

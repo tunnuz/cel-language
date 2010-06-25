@@ -1,0 +1,48 @@
+%%% Needed instructions %%%
+\documentclass[11pt,a4paper,english]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{makeidx}
+\usepackage{color}
+\usepackage{blindtext}
+\usepackage{tocbibind}
+\usepackage{project}
+
+\makeindex
+% \usepackage{latexsym} %%% Math symbols
+
+\graphicspath{{./figures/}}
+%%% Redefinition of the foot line %%%
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}
+\fancyfoot[LO]{\bfseries\rightmark}
+\fancyfoot[RE]{\bfseries\leftmark}
+\fancyfoot[LE, RO]{\bfseries\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+%%% Information for the front page %%%
+\include{frontpage}
+
+%%% Beginning of real document %%%
+\begin{document}
+	
+	%%% Front page and indexes %%%
+	\maketitle
+	\tableofcontents
+	
+	\include{chap1}
+	\newpage
+	\include{chap2}
+	\newpage
+	\include{chap3}
+	\newpage
+	
+	\appendix
+
+	\include{appendix}
+	
+\end{document}

@@ -1,0 +1,141 @@
+\section{Introduction}
+
+The \emph{Camera Evaluation Language (CEL)} is a language for reasoning about images produced by rendering a 3D scene from a camera. Expressions written in CEL can evaluate, for example, the relative size of an object in the image, or how much it is occluded by other objects. This kind of information is useful to check if an application is properly displaying some relevant objects (e.g., in a videogame, to check of the main character is at least a certain size on screen, and not too much occluded), or in automatic camera control approaches, to check how much a camera is satisfying some requirements.
+
+This document is organized as follows: Section \ref{language} describes how one can write CEL scripts and their semantics; Section \ref{build} explains how to build CEL on MacOS, Linux and (not yet) Windows; Section \ref{test} describes the operations which can be performed using the Test application; Section \ref{licensing} contains details about the licensing of CEL and other third party software we used. Appendix \ref{grammar} describes the grammar of the CEL language.
+	
+\section{The CEL Language} \label{language}
+	
+CEL is composed by:
+\begin{itemize}
+	\setlength{\itemsep}{2pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	
+	\item \emph{Rendering Operators}, that given a camera and part of a 3D scene will derive a \emph{Pixel Set};
+	\item \emph{Pixel Set Operators}, that act on Pixel Sets and derive other Pixel Sets or numerical values;
+	\item common mathematical, logical and set operators and relations.
+\end{itemize}
+
+CEL operators are listed in Table \ref{Table:CameraLanguage}. 
+
+A pixel set $PS$ is a set of pixels, each with $x$, $y$, $z$ coordinates (and no color). A $PS$ derived from a rendering operator is roughly the content of the Z-buffer after rendering the subscene (more exactly, not all the Z-buffer, but just the Z-buffer cells where a value has been written during rendering). Additionally, each pixel in $PS$ has an attribute called $side$, whose value has meaning when the rendering operator performs more renderings (as in the case of the \texttt{CR} operator). 
+
+A simple CEL script is the following:
+
+\begin{verbatim}
+Declare
+   // Area of an object in pixels
+   Area(obj) = Count(R(obj));
+
+Evaluate
+   Area("transporter1");
+\end{verbatim}
+
+A CEL script has two sections, \texttt{Declare} and \texttt{Evaluate} (both mandatory). As the names suggest, the \texttt{Declare} section can contain declaration of new operators written in the language, while the \texttt{Evaluate} section will contain a sequence of CEL expression, possibly using the operators declared previously, which will be evaluated when the script is parsed. In the following, we describe the CEL operators that can be used when declaring new operators or writing expressions. 
+
+The expression \texttt{R(obj)} takes the object called $obj$ in the 3D scene and derives a pixel set by rendering just $obj$ from the current camera (CEL assumes that a default camera is defined). We can use the operator \texttt{!} and write \texttt{R(!obj)} to render, instead of the $obj$, all the 3D scene but $obj$. In this case, all pixels in the resulting pixel set will have \emph{side=front}. When $obj$ is not in the camera view volume, the resulting pixel set will be empty.
+
+The expression \texttt{CR(obj)} takes the object called \texttt{obj} in the 3D scene (more specifically, a node in the .scene file) and derives a pixel set by rendering it six times, the first time using a camera as the default one (but with 90 degrees FOV, both vertically and horizontally), and the other five times rotating the camera 90 degrees around the camera axes (i.e. performing rendering to a cube map). In this case, all pixels from each rendering will have a different value of the \emph{side} attribute (\emph{front, right, top, ...}).
+
+% Note: I believe we could get rid of the side attribute and have CR generate six pixel sets, maybe tagged with front, left, ...
+% Note: By using also the camera as a parameter, we could get rid of CR and perform it by six R applications: note that this would make some <expression>s more complicated, but it simplify the language and also allow to compare pixel sets obtained from different cameras, and this could be worthwhile maybe ... future work.
+
+Starting from a pixel set \texttt{PS}, we can compute some numbers:
+\begin{itemize}
+	\setlength{\itemsep}{2pt}
+	\setlength{\parskip}{0pt}
+	\setlength{\parsep}{0pt}
+	
+	\item \texttt{Count(PS)} is the number of pixels in \texttt{PS}; 
+	\item \texttt{MaxX(PS)} is the maximum x coordinate of all pixels in \texttt{PS}; we can also compute \texttt{MinX(PS)}, \texttt{MaxY(PS)}, ...
+	\item \texttt{AvgX(PS)} is the average x coordinate of all pixels in \texttt{PS}; we can also compute \texttt{AvgX(PS)}, \texttt{AvgY(PS)}, ...
+\end{itemize}
+
+While \texttt{Count} works for each pixel in a pixel set, min, max and avg operators only take into account the pixels which have $side=front$.
+These operators can be used, for example, to declare operators that compute the relative sizes of an object on screen:
+
+\begin{verbatim}
+Declare
+   Area(obj) = Count(R(obj))/(imageWidth*imageHeight);
+   Height(obj) = (MaxY(R(obj) - MinY(R(obj))/imageHeight;
+   Width(obj) = (MaxX(R(obj) - MinX(R(obj))/imageWidth;
+\end{verbatim}
+
+\texttt{imageHeight} and \texttt{imageWidth} are predefined constants in CEL, and respectively correspond to the height and width of the viewport to which the default camera renders.
+
+Additionally, we can compute the minimum distance between two pixel sets by using \texttt{Distance(PS1, PS2)}. This can be useful, for example, to evaluate the relative distance of two objects on screen.
+
+The operator \texttt{Overlap(PS1, PS2)} returns a pixel set \texttt{PS3} with all the pixels in \texttt{PS1} that have the same $x, y, side$ coordinates of some pixels in \texttt{PS2}. For example, a framing property (i.e. checking if an object is inside some frame in the rendered image) can be defined and evaluated by the following script:
+
+\begin{verbatim}
+Declare
+   HERE WE SHOULD DECLARE A SCREEN-ALIGNED FRAME CALLED QUAD1
+   Framing(T, SAS) = Count(Overlap(CR(T), CR(SAS)))/Count(CR(T))
+
+Evaluate
+   Framing("transporter1", QUAD1);
+\end{verbatim}
+
+The operator \texttt{CoveredBy(PS1, PS2)} returns a pixel set \texttt{PS3} with all the pixels in \texttt{PS1} that have the same $x, y, side$ coordinates, but greater $z$ coordinate, of some pixels in \texttt{PS2}. In other words, \emph{CoveredBy} returns those pixels in \texttt{PS1} which overlap pixels of \texttt{PS2}, and are "behind them" (i.e. more distant from the camera). This can be used, for example, to create operators to evaluate how much an object is occluded in the image rendered from the current camera:
+
+\begin{verbatim}
+Declare
+   Occluded(obj) = if (Count(R(obj)>0) 
+      Count(CoveredBy(R(obj)),R(!obj))/Count(R(obj))
+   else -1;
+
+Evaluate
+   Occluded("transporter1");
+\end{verbatim}
+
+The script shows that we can also use conditional expressions in CEL scripts. 
+
+Finally, we have some operators to reason about relative positioning of objects on the screen. The operator \texttt{Left(PS1, PS2)} returns all pixels of \texttt{PS1} whose $x$ coordinate is less than any pixel in \texttt{PS2}. Similarly, the operators \texttt{Right(PS1, PS2)}, \texttt{Above(PS1, PS2)}, \texttt{Below(PS1, PS2)} (the last two considering the $y$ coordinate) respectively return the pixels of \texttt{PS1} that are right of, above or below all pixels in \texttt{PS2}. These operators only take into account the pixels which have $side=front$.
+With the \texttt{Left} operator, we can for example define an operator that evaluates how much an object is left of another object in the image generated from the camera:
+
+\begin{verbatim}
+Declare
+    LeftOf(obj1,obj2) = if (Count(R(obj1))>0)
+        Count(Left(R(obj1),R(obj2)))/Count(R(obj1)) 
+    else -1;
+
+Evaluate
+    LeftOf("transporter1","transporter2");
+\end{verbatim}
+
+\begin{table}
+\begin{tabular}{|p{3.3cm}|p{8.7cm}|}\hline
+    Operator or Relation
+& 	 Returns \\
+\hline
+    \emph{R(obj)}
+& 	 $PS$ = the set of pixels $p$ that results from rendering \emph{obj} from \emph{camera}, with $p_{side}=0$
+for each $p$\\ \hline
+   
+ 	 \emph{CR(object)}
+& 	 $PS$ = the set of pixels $p$ that results from rendering six times \emph{object} from the position of \emph{camera}, using 90 degrees FOV,
+      perspective projection and view direction towards a face of a cube centered in the camera, with $p_{side}=0, \dots, 5$ depending
+on which side of the cube $p$ belongs to\\ \hline
+	
+%	\emph{Count(PS)}  & 	$n = | PS |$ \\ \hline   we don't need to define this since we have the set cardinality operator
+	
+	$Max_x(PS,side)$ 			&	$max( \{p_x | p \in PS \wedge p_{side}=side \} )$ \\ 
+	$Min_x, Max_y, Min_y$ & \dots \\
+	$Max_z, Min_z$ & \dots \\ \hline
+	
+	$Avg_x(PS)$				&	$avg( \{p_x | p \in PS \} )$ \\ 
+	$Avg_y, Avg_z$	& \dots \\ \hline
+	
+	\emph{Overlap}$(PS_1, PS_2)$		&  set of pixels in $PS_1$ that have the same $x, y, side$ coordinates of some pixels in $PS_2$ \\ \hline
+	
+	\emph{CoveredBy}$(PS_1, PS_2)$	&  set of pixels of $PS_1$ that would be covered by pixels of $PS_2$ if we rendered together the subscenes that produced $PS_1$ and $PS_2$ \\ \hline
+	
+	\emph{Left}$(PS_1, PS_2)$ &  	set of pixels of $PS_1$ that are left of any pixel in $PS_2$, considering only pixels with $p_{side}=0$ \\ 
+	\emph{Right, Above, Below} & \dots \\ \hline
+	\emph{Distance}$(PS_1, PS_2)$ & $min( distance(p,p')$ where $p \in PS_1, p' \in PS_2$, , considering only pixels with $p_{side}=0$ \\ \hline
+	
+\end{tabular}
+\caption{Operators and relations in CEL. $PS, PS_1, PS_2$ denote pixel sets.} \label{Table:CameraLanguage}
+\end{table}
+	

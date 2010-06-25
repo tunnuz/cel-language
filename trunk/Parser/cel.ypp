@@ -1,0 +1,702 @@
+
+%{
+
+/*
+--------------------------------------------------------------------------------
+This source file is part of CEL (Camera Evaluation Language), a research project
+by Marc Christie (INRIA-Rennes, France), Roberto Ranon and Tommaso Urli (both
+from HCI-Lab, University of Udine, Italy).
+
+For the latest info, see http://www.cameracontrol.org/language
+
+Copyright (c) 2010 INRIA Rennes, France and University of Udine, Italy
+Also see acknowledgements in Readme.txt
+
+If you use, modify, or simply find this code interesting please let us know
+at info@cameracontrol.org.
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU Lesser General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later
+version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 59 Temple
+Place - Suite 330, Boston, MA 02111-1307, USA, or go to
+http://www.gnu.org/copyleft/lesser.txt.
+--------------------------------------------------------------------------------
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <vector>
+#include "celparser.h"
+
+
+using namespace std;
+
+extern int yylineno;
+int yyerror(char *str);
+int yyparse(void);
+int yylex();
+int yyterminate();
+
+CEL::SymbolTable savedSymbols;
+CEL::SymbolTable localSymbols;
+
+%}
+
+%union {
+	int intType;
+	double doubleType;
+	char * stringType;
+	CEL::Expression *expressionType;
+	CEL::BaseType *baseType;	
+	CEL::CallFunctionOperator *callFunctionType;
+	CEL::Operator *operatorType;
+	CEL::ComparisonOperator *cmpOperatorType;
+	CEL::ConditionalOperator *cndOperatorType;
+	CEL::MathOperator *mathOperatorType;
+	CEL::Symbol *symbolType;
+	CEL::CelParser *parserType;	
+	CEL::HashTable *hashTableType;
+	CEL::PixelSetExpression *pixelSetExpressionType;
+	CEL::VectorOfTargets *vectorOfTargetsType;
+	CEL::TargetExpression *targetExpressionType;
+	CEL::Target *targetType;
+	std::vector<CEL::Expression *> *vectorExpressionType;
+}
+
+
+
+%token SQRT SQR SIN COS TAN ASIN ACOS ATAN ATAN2 EXP IF ELSE
+%token COUNT COVEREDBY LEFTOF RIGHTOF ABOVEOF BELOWOF RENDER CUBERENDER DECLARE EVALUATE CEL_INCLUDE CELEOF SILHOUETTE 
+%token MAXX MINX MAXY MINY DISTANCE OVERLAP IMAGEWIDTH IMAGEHEIGHT RECT VIEWVOLUME
+%token <stringType> FILENAME
+%token <stringType> FUNCTION
+%token <stringType> CMP
+%token <stringType> '-' '+' '*' '/' '^' '!'
+%token <doubleType> DOUBLE UDOUBLE
+%type <stringType> functionName
+%type <stringType> leftArgument
+%type <symbolType> leftBodyRelation
+%type <hashTableType> list_of_leftArguments
+%type <vectorExpressionType> list_of_rightArguments
+%type <pixelSetExpressionType> pixelSetExpression
+%type <vectorOfTargetsType> ListOfTargets
+%type <targetExpressionType> Targets
+%type <targetExpressionType> TargetExpression
+%type <targetType> target
+%type <callFunctionType> functionCall 
+%type <expressionType> expression
+%type <expressionType> condition
+%type <stringType> targetName
+%type <doubleType> realValue
+%type <expressionType> rightBodyRelation
+
+%left '+' '-'
+%left OP2_PREC_1 '*' '/'
+%left OP2_PREC_2 '^'
+%left UMINUS 
+
+%start structure
+%%
+
+
+structure : corpus 
+
+corpus : list_of_includes DECLARE list_of_declarations EVALUATE list_of_evaluators  { 
+		
+		std::cout << "[corpus]: Rule 'corpus' read " << endl;
+		
+		}
+	
+
+list_of_includes : 
+	| list_of_includes include_declaration 
+	{
+		std::cout << "[list_of_includes]: Rule 'list_of_includes' read" << endl;
+	}
+
+include_declaration : include corpus eof {
+		std::cout << "[include_declaration]: 'include_declaration' read " << endl;
+	}
+
+
+include : CEL_INCLUDE '"' FILENAME '"'
+	{		
+		std::cout << "[include] : " << std::endl;
+		std::cout << "Switching to buffer " << $3 << endl;
+		std::cout << "Saving line " << yylineno << endl;
+		CEL::CelParser::getSingletonParser()->m_flexInputBuffers.setLineNo(yylineno);
+		yylineno = 1;
+		CEL::CelParser::getSingletonParser()->m_flexInputBuffers.addBuffer($3);		
+		CEL::CelParser::getSingletonParser()->m_flexInputBuffers.createAndSwitchBuffer();
+						
+	}
+
+eof : CELEOF
+	{
+		std::cout << "[eof]: " << std::endl;
+		std::cout << " Buffer size is "
+			<< CEL::CelParser::getSingletonParser()->m_flexInputBuffers.bufferSize() << endl;
+		if (CEL::CelParser::getSingletonParser()->m_flexInputBuffers.bufferSize() <= 1) {
+			
+		} else {
+			std::cout << "One more up " << endl;
+			yy_delete_buffer(CEL::CelParser::getSingletonParser()->m_flexInputBuffers.getBuffer());
+			CEL::CelParser::getSingletonParser()->m_flexInputBuffers.retrieveBuffer();
+			yylineno = CEL::CelParser::getSingletonParser()->m_flexInputBuffers.getLineNo();
+			std::cout << "Back to Buffer " 
+				<< CEL::CelParser::getSingletonParser()->m_flexInputBuffers.getFileName()
+				<< "at line " << yylineno << endl;
+			yy_switch_to_buffer(CEL::CelParser::getSingletonParser()->m_flexInputBuffers.getBuffer());
+		}
+	}
+
+list_of_declarations : 
+	| list_of_declarations declaration 
+
+declaration : leftBodyRelation '=' rightBodyRelation ';' 
+		{
+			std::cout << "[declaration]:" << std::endl;
+			if (CEL::CelParser::getSingletonParser()->existsSymbol(*$1) ) {
+				yyerror(" Symbole already defined ");
+			} else {
+				std::cout << " we store symbol " << $1->getSymbolName() << std::endl;
+				$1->setExpression($3);
+				CEL::getSymbolTableSingleton().addSymbol(*$1,$3);				
+				CEL::getSymbolTableSingleton().printSymbolTable();
+				std::cout << "stored..." << std::endl;
+
+				// ok we remove the local symboles and  pop the saved symbols and clear the savedSymbolTable
+				CEL::getSymbolTableSingleton().removeSymbols(localSymbols);
+				
+				std::cout << "cleaning local symbol table" << std::endl;
+				CEL::getSymbolTableSingleton().restoreSymbols(savedSymbols);
+				savedSymbols.clear();
+
+				
+				CEL::getSymbolTableSingleton().printSymbolTable();
+
+
+			}		
+		}		
+
+leftBodyRelation : FUNCTION
+		{
+			std::cout << "[leftBodyRelation]:" << std::endl;
+			std::cout << "Creating a symbol" << $1 << std::endl;
+			$$ = new CEL::Symbol($1);
+		}
+	
+	| FUNCTION '(' list_of_leftArguments ')' 
+		{			
+			std::cout << "[lefBodyRelation]:" << std::endl;
+			$$ = new CEL::Symbol($1);
+			CEL::HashTable::iterator it;
+			localSymbols.clear();
+			for (it = $3->begin(); it != $3->end(); it ++) {
+				std::cout << "   adding parameter " <<  it->first.getSymbolName() << std::endl;
+				$$->addParameter(it->first.getSymbolName());
+				localSymbols.addSymbol(it->first, NULL);
+			}
+			// we add these local parameters on the symboltable (and save the similar ones if necessary)
+			std::cout << " Adding local parameters in the symbolTable and saving older symbols... " << std::endl;
+			savedSymbols = CEL::getSymbolTableSingleton().addSymbols( localSymbols );
+			savedSymbols.printSymbolTable();
+		}
+		
+
+
+list_of_leftArguments : leftArgument  
+		{
+			std::cout << "[list_of_leftArguments]:" << std::endl;
+			$$ = new CEL::HashTable();
+			if ($$->find(CEL::Symbol($1)) != $$->end()) {		
+				yyerror(" Argument Symbole already defined ");
+			} else {
+				(*$$)[CEL::Symbol($1)] = NULL;				
+			}	
+			
+		 }
+	| list_of_leftArguments ',' leftArgument
+		{
+			std::cout << "[list_of_leftArguments]:" << std::endl;
+			$$ = $1;
+			if ($$->find(CEL::Symbol($3)) != $$->end()) {		
+				yyerror(" Argument Symbole already defined ");
+			} else {
+				(*$$)[CEL::Symbol($3)] = NULL;				
+			}
+		
+		 	$$ = $1;
+		 }
+
+
+leftArgument : FUNCTION  
+		{ 
+			std::cout << "[leftArgument]:" << std::endl;
+			$$ = $1;
+		}
+
+
+rightBodyRelation : expression  
+		{
+			std::cout << "[rightBodyRelation]:" << std::endl;
+			$$ = $1;
+		}
+
+realValue : DOUBLE
+		{  $$ = $1; }
+	| '-' DOUBLE
+		{ $$ = -$2; }
+	| '+' DOUBLE
+		{ $$ = $2; }
+
+
+expression : realValue 
+		{ 
+			std::cout << "[expression]: DOUBLE" << std::endl;
+			$$ = new CEL::BaseType($1);
+		}
+	| '(' expression ')'
+		{ 
+			std::cout << "[expression]: ( )" << std::endl;
+			$$ = $2;
+		}
+	
+	| SQRT '(' expression ')' 
+		{
+			std::cout << "[expression]: SQRT ( )" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_SQRT);
+			op->push_back($3);
+			$$ = op;		
+		}
+	| SQR '(' expression ')' 
+		{
+			std::cout << "[expression]: SQR ( )" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_SQR);
+			op->push_back($3);
+			$$ = op;		
+		}
+	| SIN '(' expression ')' 
+		{
+			std::cout << "[expression]: SIN ( )" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_SIN);
+			op->push_back($3);
+			$$ = op;		
+		}
+	| COS '(' expression ')' 
+		{
+			std::cout << "[expression]: COS ( )" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_COS);
+			op->push_back($3);
+			$$ = op;		
+		}
+	| TAN '(' expression ')' 
+		{
+			std::cout << "[expression]: TAN ( )" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_TAN);
+			op->push_back($3);
+			$$ = op;		
+		}
+	| ASIN '(' expression ')' 
+		{
+			std::cout << "[expression]: ASIN ( )" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_ASIN);
+			op->push_back($3);
+			$$ = op;		
+		}
+	| ACOS '(' expression ')' 
+		{
+			std::cout << "[expression]: ACOS ( )" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_ACOS);
+			op->push_back($3);
+			$$ = op;		
+		}
+	| ATAN '(' expression ')' 
+		{
+			std::cout << "[expression]: ATAN ( )" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_ATAN);
+			op->push_back($3);
+			$$ = op;		
+		}
+
+	| ATAN2 '(' expression ',' expression ')' 
+		{
+			std::cout << "[expression]: ATAN2 (  exp , exp )" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_ATAN2);
+			op->push_back($3);
+			op->push_back($5);
+			$$ = op;		
+		}
+	
+	| EXP '(' expression ')' 
+		{
+			std::cout << "[expression]: EXP (   )" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_EXP);
+			op->push_back($3);
+			$$ = op;		
+		}
+
+	| COUNT '(' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: COUNT (  )" << std::endl;
+			$$ = new CEL::CountPixelSetOperator($3);
+		}
+	
+	| MAXX '(' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: MAXX (  )" << std::endl;
+			$$ = new CEL::MaxXPixelSetOperator($3);
+		}	
+
+	| MINX '(' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: MINX (  )" << std::endl;
+			$$ = new CEL::MinXPixelSetOperator($3);
+		}	
+
+	
+	| MAXY '(' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: MAXY (  )" << std::endl;
+			$$ = new CEL::MaxYPixelSetOperator($3);
+		}	
+
+	| MINY '(' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: MINY (  )" << std::endl;
+			$$ = new CEL::MinYPixelSetOperator($3);
+		}	
+
+	| DISTANCE '(' pixelSetExpression ',' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: DISTANCE (  )" << std::endl;
+			$$ = new CEL::DistancePixelSetOperator($3,$5);
+		}	
+
+	| RECT '(' DOUBLE ',' DOUBLE ',' DOUBLE ',' DOUBLE ')'
+		{
+			std::cout << "[expression]: RECT (  )" << std::endl;
+			$$ = new CEL::QuadFrame($3,$5,$7,$9);
+		}	
+
+	| VIEWVOLUME 
+		{
+			std::cout << "[expression]: VIEWVOLUME" << std::endl;
+			$$ = new CEL::ViewVolume();
+
+		}
+	
+	| '-' expression %prec UMINUS
+		{			
+			std::cout << "[expression]: UMINUS " << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_UNARY_MINUS);
+			op->push_back($2);
+			$$ = op;
+		}
+		
+	| expression '-' expression
+		{  
+			std::cout << "[expression]: exp - exp" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_MINUS);
+			op->push_back($1);
+			op->push_back($3);			
+			$$ = op;
+		}
+	| expression '+' expression	
+		{  
+			std::cout << "[expression]: exp + exp" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_PLUS);
+			op->push_back($1);
+			op->push_back($3);			
+			$$ = op;
+		}
+	| expression '*' expression
+		{  
+			std::cout << "[expression]: exp * exp" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_MULTIPLICATION);
+			op->push_back($1);
+			op->push_back($3);			
+			$$ = op;
+		}
+	| expression '/' expression
+		{  
+			std::cout << "[expression]: exp / exp" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_DIVISION);
+			op->push_back($1);
+			op->push_back($3);			
+			$$ = op;
+		}
+	| expression '^' expression
+		{  
+			std::cout << "[expression]: exp ^ exp" << std::endl;
+			CEL::Operator *op = new CEL::MathOperator(CEL::MathOperator::MATH_POWER);
+			op->push_back($1);
+			op->push_back($3);			
+			$$ = op;
+		}
+	| IMAGEWIDTH 
+		{
+			std::cout << "[expression]: imageWidth" << std::endl;
+			CEL::Operator *op = new CEL::Constant(CEL::Constant::IMAGE_WIDTH);
+			$$ = op;
+		}
+	
+	| IMAGEHEIGHT 
+		{
+			std::cout << "[expression]: imageHeight" << std::endl;
+			CEL::Operator *op = new CEL::Constant(CEL::Constant::IMAGE_HEIGHT);
+			$$ = op;
+		}
+
+	| TargetExpression
+		{
+			std::cout << "[expression]: targetExpression" << std::endl;
+			$$ = $1;
+		}
+	
+	| functionCall
+		{
+			std::cout << "[expression]: functionCall " << std::endl;
+			if (CEL::CelParser::getSingletonParser()->existsSymbol($1->getFunctionName())) {
+				
+				$$ = $1;
+								
+			} else {
+				yyerror("Unknown function call!");	
+			}
+		}
+    | IF '(' condition ')' expression ELSE expression 
+		{
+			std::cout << "[expression]: if then else " << std::endl;
+			CEL::Operator *op = new CEL::ConditionalOperator();
+			op->push_back($3);
+			op->push_back($5);
+			op->push_back($7);
+			$$ = op;
+		}
+
+condition : expression CMP expression 
+		{
+			// no secure test, $2 needs to be one of the the following...
+			std::cout << " reading Comparator " << $2 << std::endl;
+			CEL::Operator *op;			
+			if (std::string($2) == std::string("==")) op  = new CEL::ComparisonOperator(CEL::ComparisonOperator::EQ);
+			if (std::string($2) == std::string(">=")) op  = new CEL::ComparisonOperator(CEL::ComparisonOperator::GEQ);
+			if (std::string($2) == std::string(">"))  op  = new CEL::ComparisonOperator(CEL::ComparisonOperator::GREATER);
+			if (std::string($2) == std::string("<=")) op  = new CEL::ComparisonOperator(CEL::ComparisonOperator::LEQ);
+			if (std::string($2) == std::string("<"))  op  = new CEL::ComparisonOperator(CEL::ComparisonOperator::LOWER);
+			if (std::string($2) == std::string("!=")) op  = new CEL::ComparisonOperator(CEL::ComparisonOperator::DIFFERENT);
+			
+			op->push_back($1);
+			op->push_back($3);
+			
+			$$ = op;
+		}
+	
+pixelSetExpression :  CUBERENDER '(' TargetExpression ')' 
+		{
+			std::cout << "[pixelSetExpression]: CUBERENDER ( ) " << std::endl;
+			
+			$$ = new CEL::CubeRendererPixelSetExpression($3);
+
+		}
+	| RENDER '(' TargetExpression ')'
+		{
+			std::cout << "[pixelSetExpression]: RENDER ( ) " << std::endl;
+			
+			$$ = new CEL::RendererPixelSetExpression($3);
+		}
+	| SILHOUETTE '(' pixelSetExpression ')'
+		{
+			std::cout << "[pixelSetExpression]: SILHOUETTE ( ) " << std::endl;
+			$$ = new CEL::SilhouettePixelSetExpression($3);
+		}
+	| COVEREDBY '(' pixelSetExpression ',' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: COVEREDBY (  )" << std::endl;
+			$$ = new CEL::CoveredByPixelSetExpression($3,$5);
+		}
+	
+	| LEFTOF '(' pixelSetExpression ',' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: LEFTOF (  )" << std::endl;
+			$$ = new CEL::LeftOfPixelSetExpression($3,$5);
+		}	
+
+	| RIGHTOF '(' pixelSetExpression ',' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: RIGHTOF (  )" << std::endl;
+			$$ = new CEL::RightOfPixelSetExpression($3,$5);
+		}	
+
+	| ABOVEOF '(' pixelSetExpression ',' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: ABOVEOF (  )" << std::endl;
+			$$ = new CEL::AboveOfPixelSetExpression($3,$5);
+		}	
+	
+	| BELOWOF '(' pixelSetExpression ',' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: BELOWOF (  )" << std::endl;
+			$$ = new CEL::BelowOfPixelSetExpression($3,$5);
+		}	
+
+	| OVERLAP '(' pixelSetExpression ',' pixelSetExpression ')'
+		{
+			std::cout << "[expression]: OVERLAP (  )" << std::endl;
+			$$ = new CEL::OverlapPixelSetExpression($3,$5);
+		}	
+
+
+TargetExpression : target 
+		{
+			std::cout << "[TargetExpression]: target " << std::endl;
+			$$ = $1;
+		}
+	| '!' Targets {
+			std::cout << "[TargetExpression]: ! targets " << std::endl;
+			$$ = new CEL::TargetNegation($2);
+		}
+
+Targets : target
+		{
+			std::cout << "[Targets]: target " << std::endl;
+			$$ = $1;
+		}
+	| '[' ListOfTargets ']'
+		{
+			std::cout << "[Targets]: [ list of targets ] " << std::endl;
+			$$ = $2;
+		}
+
+target : '"' targetName '"'
+		{
+			std::cout << "[target]: \" targetname\"  " << std::endl;
+			$$ = new CEL::Target($2);
+		}
+
+	| RECT '(' realValue ',' realValue ',' realValue ',' realValue ')'
+		{
+			std::cout << "[target]: RECT (  )" << std::endl;
+			$$ = new CEL::QuadFrame($3,$5,$7,$9);
+		}	
+	| VIEWVOLUME 
+		{
+			std::cout << "[target]: VIEWVOLUME" << std::endl;
+			$$ = new CEL::ViewVolume();
+
+		}
+	|  functionCall
+		{
+			std::cout << "[functionCall] (TargetFunction)" << std::endl;
+			$$ = new CEL::Target($1);
+		}
+
+ListOfTargets : target 
+		{	
+			std::cout << "[ListOfTargets]: target  " << std::endl;
+			$$ = new CEL::VectorOfTargets();
+			$$->push_back($1);
+		}
+		
+	| ListOfTargets ',' target
+		{
+			std::cout << "[ListOfTargets]: ListOfTargets , target  " << std::endl;
+			$1->push_back($3);
+			$$ = $1;
+		}
+		
+targetName : FUNCTION
+		
+functionCall : functionName
+		{
+			std::cout << "[functionCall]: functionName  " << $1 << std::endl;
+			$$ = new CEL::CallFunctionOperator($1);
+		
+		}
+	| functionName '(' list_of_rightArguments ')'
+		{
+			std::cout << "[functionCall]: functionName ( arguments )  " << $1 << std::endl;
+			// check the # of arguments is appropriate...
+			if ($3->size() != (CEL::CelParser::getSingletonParser()->getSymbol($1)).getParameters().size()) {
+				yyerror(" Wrong number of arguments ");
+			} else {
+			
+				std::cout << "  number of args is correct" << std::endl;
+				$$ = new CEL::CallFunctionOperator($1);
+				
+				// assign the parameter names to the expressions
+				std::vector<CEL::Expression *>::iterator itExp;
+				CEL::Parameters::const_iterator itName = CEL::CelParser::getSingletonParser()->getSymbol($1).getParameters().begin();
+				
+				std::cout << "   size of parameterlist " << CEL::CelParser::getSingletonParser()->getSymbol($1).getParameters().size() << std::endl;
+				
+				for (itExp = $3->begin(); itExp != $3->end(); ++itExp) {
+					std::cout << "  assign the arg " << *itName << std::endl;
+					$$->assignParameterInLocalSymbolTable( (*itName) , *itExp);
+					++itName;
+				}
+				std::cout << "  args assigned" << std::endl;
+			}
+			// dont need the vector of expressions any more...
+			delete $3;
+		}
+
+
+functionName : FUNCTION
+		{
+			std::cout << "[functionName]: FUNCTION " << std::endl;
+
+			CEL::getSymbolTableSingleton().printSymbolTable();
+			// check if the symbol is ok...
+			if (CEL::CelParser::getSingletonParser()->existsSymbol(CEL::Symbol($1))) {
+				  
+			  	$$ = $1;
+			
+			} else {
+				yyerror(" Unknown symbole");
+			}
+			
+		}
+
+list_of_rightArguments : expression 
+		{
+			std::cout << "[list_of_rightArguments]: expression  " << std::endl;
+			$$ = new std::vector<CEL::Expression *>();
+			$$->push_back($1);		 
+		}
+	| list_of_rightArguments ',' expression 
+		{
+			std::cout << "[list_of_rightArguments]: list_of_rightArguments , expression  " << std::endl;
+			$1->push_back($3);
+			$$ = $1;
+		}
+
+
+list_of_evaluators :
+		{
+		}
+	| list_of_evaluators evaluator
+		{
+		}
+
+
+evaluator : expression ';' 
+		{
+			std::cout << "[evaluator]:  expression  " << std::endl;
+			CEL::CelParser::getSingletonParser()->addEvaluator($1);
+		}
+
+
+%%
+
+
+
