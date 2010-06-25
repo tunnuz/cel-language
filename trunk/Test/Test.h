@@ -227,8 +227,6 @@ public:
 		
 		} else if (load) {
 		
-			
-		
 			try {
 				
 				delete cp;
