@@ -36,7 +36,7 @@ template<> OgreConsole *Singleton<OgreConsole>::ms_Singleton=0;
 #define CONSOLE_LINE_LENGTH 85
 #define CONSOLE_LINE_COUNT 15
  
-OgreConsole::OgreConsole() : start_line(0) {
+OgreConsole::OgreConsole() : start_line(0), command_executed(false) {
  	
 	/** Populate character map */
 	charMap[OIS::KC_0] = '0';
@@ -164,7 +164,7 @@ void OgreConsole::onKeyPressed(const OIS::KeyEvent &arg){
 				command_executed = false;
 			}
 		}
-		
+				
 		print("> " + prompt);
 		prompt="";
 
