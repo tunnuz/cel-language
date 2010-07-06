@@ -1,27 +1,27 @@
 Declare
 
 // Area of the object relative to the screen area
-Area(obj) = Count(Render(obj)) / (imageWidth * imageHeight);
+Area(obj) = Count(R(obj)) / (imageWidth * imageHeight);
 
 // Relative left of
 LeftOf(obj1,obj2) = 
-	if (Count(Render(obj1)) > 0)
-		Count(Left(Render(obj1), Render(obj2))) / Count(Render(obj1)) 
+	if (Count(R(obj1)) > 0)
+		Count(Left(R(obj1), R(obj2))) / Count(R(obj1)) 
 	else 
 		-1;
 		
 // Occluded fraction
 Occluded(obj) =	
-	if (Count(Render(obj)) > 0)
-		Count(CoveredBy(Render(obj), Render(!obj))) / Count(Render(obj)) 
+	if (Count(R(obj)) > 0)
+		Count(CoveredBy(R(obj), R(!obj))) / Count(R(obj)) 
 	else 
 		-1;
 
 // How much of an object is visible?
-InViewVolume(obj) = Count(Overlap(CubeRender(obj), CubeRender(viewvolume))) / Count(CubeRender(obj));
+InViewVolume(obj) = Count(Overlap(CR(obj), CR(viewvolume))) / Count(CR(obj));
 
 // Framing
-Framing(obj, sas) = Count(Overlap(Render(obj), Render(sas))) / Count(Render(obj));
+Framing(obj, sas) = Count(Overlap(R(obj), R(sas))) / Count(R(obj));
 
 
 Evaluate
@@ -32,13 +32,15 @@ LeftOf("transporter1","transporter03");
 
 Area("transporter1");
 
-Count(CubeRender(viewvolume));
+Count(R("transporter1"));
+
+Count(CR(viewvolume));
 
 Occluded("transporter1");
 
 InViewVolume("spitfire");
 
-Count(Render(rect(0.0, 1.0, 1.0, -1.0)));
+Count(R(rect(0.0, 1.0, 1.0, -1.0)));
 
 /** Not working */
 
