@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CEL", "CEL.vcproj", "{3551A193-E8C2-4AB1-9CF5-1B1812AE3B73}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "..\Test\Test.vcproj", "{62AEC9DA-6416-4EC6-9697-2D65479C4AEA}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3551A193-E8C2-4AB1-9CF5-1B1812AE3B73}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3551A193-E8C2-4AB1-9CF5-1B1812AE3B73}.Debug|Win32.Build.0 = Debug|Win32
+		{3551A193-E8C2-4AB1-9CF5-1B1812AE3B73}.Release|Win32.ActiveCfg = Release|Win32
+		{3551A193-E8C2-4AB1-9CF5-1B1812AE3B73}.Release|Win32.Build.0 = Release|Win32
+		{62AEC9DA-6416-4EC6-9697-2D65479C4AEA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{62AEC9DA-6416-4EC6-9697-2D65479C4AEA}.Debug|Win32.Build.0 = Debug|Win32
+		{62AEC9DA-6416-4EC6-9697-2D65479C4AEA}.Release|Win32.ActiveCfg = Release|Win32
+		{62AEC9DA-6416-4EC6-9697-2D65479C4AEA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
