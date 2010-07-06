@@ -31,6 +31,7 @@ http://www.gnu.org/copyleft/lesser.txt.
 #ifndef _dPixelSet // to avoid duplicate inclusions
 #define _dPixelSet
 
+#include "Ogre.h"
 
 /** Use to discern between regular textures and cube maps:
  - PLANAR		regular 2D texture
